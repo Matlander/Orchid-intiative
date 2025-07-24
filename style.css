@@ -1,0 +1,114 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #edf6f3;
+  color: #333;
+}
+
+header {
+  background-color: #4c9c8d;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  background-color: #e7dcdc;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  text-decoration: navajowhite;
+  color: #4c9c8d;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #4c9c8d;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+/* Form Container */
+section {
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Form Inputs */
+form input, form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Submit Button */
+form button {
+  background-color: #4c9c8d;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #357b6b;
+}
+
+/* Donation List */
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section ul li {
+  background-color: #f0f8f7;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+}
+footer a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 24px;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
