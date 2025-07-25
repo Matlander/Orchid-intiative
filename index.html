@@ -8,7 +8,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+ 
 <body>
+  
+
   <!-- Hero Banner -->
   <header class="hero-banner">
     <img src="images/logo.jpg" alt="Orchid Initiative Logo" class="logo" />
@@ -16,18 +19,22 @@
     <p>Conserve. Enhance. Empower.</p>
   </header>
 
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#mission">Mission</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="#donate">Donate</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- Menu Toggle Button -->
+  <button id="menu-toggle" title="Open Menu">
+    <i class="fas fa-bars"></i>
+  </button>
 
-  <!-- Mission Section -->
+  <nav id="sliding-menu">
+  <ul>
+    <li><a href="#mission">Mission</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="donate.html">Donate</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+  <!-- Content Sections -->
   <section id="mission">
     <h2>Our Mission</h2>
     <p>Global Orchard Initiative Network is a community-based organization in Busia District focusing on orchards, afforestation, environmental conservation, and agriculture-based empowerment.</p>
@@ -44,35 +51,26 @@
     <p><strong>Partners:</strong> Busia Forest, Natural Resource, Health & Education Departments</p>
   </section>
 
-  <!-- Gallery -->
   <section id="gallery">
     <h2>Gallery</h2>
     <div class="gallery-container">
       <img src="images/img1.jpg" alt="Orchard planting">
       <img src="images/img2.jpg" alt="Environmental workshop">
-      <img src="images/img3.jpg" alt="Community gathering">
     </div>
   </section>
 
-  <!-- Video -->
   <section id="video">
     <h2>Watch Our Story</h2>
-    <iframe width="100%" height="315" src="https://youtu.be/DTbm0u5U1ls?si=Nqqr_HVRwz9wmDg4" frameborder="0" allowfullscreen></iframe>
+    <iframe width="100%" height="315"
+  src="https://www.youtube.com/embed/DTbm0u5U1ls"
+  title="Orchid Initiative Video"
+  frameborder="0"
+  allowfullscreen></iframe>
+
   </section>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Active Projects</h2>
-    <ul>
-      <li><a href="project1.html">🌱 Orchard Farms in Institutions</a></li>
-      <li><a href="project2.html">📚 School Workshops</a></li>
-      <li><a href="project3.html">👩‍🌾 Women Empowerment</a></li>
-      <li><a href="project4.html">🍎 Community Nutrition</a></li>
-      <li><a href="project5.html">🌿 Youth Horticulture Training</a></li>
-    </ul>
-  </section>
+  
 
-  <!-- Impact -->
   <section id="impact">
     <h2>Impact at a Glance</h2>
     <ul>
@@ -82,7 +80,6 @@
     </ul>
   </section>
 
-  <!-- Donate -->
   <section id="donate">
     <h2>Support Us</h2>
     <p>Your donation fuels our work. Join us in growing hope across Uganda.</p>
@@ -94,20 +91,17 @@
     <p>📧 Email: goinetug@gmail.com</p>
     <p>📍 BUYIYE VILLAGE, BUSIKHO PARISH, MASINYA SUBCOUNTY, Busia, Uganda</p>
     <p>Connect with us:</p>
-    <a href="https://www.facebook.com/share/p/1FnyU5En1f/" target="_blank" rel="noopener" title="Facebook">
-      <i class="fab fa-facebook fa-2x"></i>
-    </a>
-    <a href="https://twitter.com/goinetug" target="_blank" rel="noopener" title="Twitter">
-      <i class="fab fa-twitter fa-2x"></i>
-    </a>
-    <a href="https://instagram.com/goinetug" target="_blank" rel="noopener" title="Instagram">
-      <i class="fab fa-instagram fa-2x"></i>
-    </a>
+    <a href="https://www.facebook.com/share/p/1FnyU5En1f/" target="_blank" title="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
+    <a href="https://twitter.com/goinetug" target="_blank" title="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+    <a href="https://instagram.com/goinetug" target="_blank" title="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
   </footer>
 
   <!-- WhatsApp Button -->
   <a href="https://wa.me/+256788258931" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
+
+  <!-- JavaScript File -->
+  <script src="scripts.js"></script>
 </body>
 </html>
