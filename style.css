@@ -38,7 +38,7 @@ header {
   top: 20px;
   right: 20px;
   z-index: 999;
-  background: #fff;
+  background: #350404;
   border: none;
   font-size: 2rem;
   cursor: pointer;
@@ -51,7 +51,7 @@ header {
   right: -100%;
   width: 70%;
   height: 100%;
-  background: #f0f0f0;
+  background: #a9dbb0;
   transition: right 0.4s ease;
   z-index: 998;
   padding-top: 5rem;
