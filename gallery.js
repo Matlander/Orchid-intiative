@@ -1,20 +1,39 @@
 document.addEventListener("DOMContentLoaded", () => {
   let slideIndex = 0;
-  const slidesContainer = document.querySelector(".slides");
   const slides = document.querySelectorAll(".slide");
+  const slidesContainer = document.querySelector(".slides");
   const nextBtn = document.querySelector(".next");
   const prevBtn = document.querySelector(".prev");
 
-  if (!slidesContainer || slides.length === 0) return; // safety check
+  if (!slidesContainer || slides.length === 0) return;
 
-  // Function to show current slide
+  slidesContainer.style.position = "relative";
+  slidesContainer.style.overflow = "hidden";
+
+  slides.forEach((slide, i) => {
+    slide.style.position = "absolute";
+    slide.style.top = 0;
+    slide.style.left = 0;
+    slide.style.width = "100%";
+    slide.style.opacity = i === 0 ? "1" : "0";
+    slide.style.transition = "opacity 1s ease-in-out";
+  });
   function showSlide(index) {
-    const slideWidth = slides[0].clientWidth;
-    slidesContainer.style.transform = `translateX(-${index * slideWidth}px)`;
-    slidesContainer.style.transition = "transform 0.8s ease-in-out";
+    slides.forEach((slide, i) => {
+      slide.style.opacity = i === index ? "1" : "0";
+      slide.style.zIndex = i === index ? "1" : "0";
+    });
+
+    const activeImg = slides[index].querySelector("img");
+    if (activeImg) {
+      slidesContainer.style.height = activeImg.clientHeight + "px";
+    }
   }
 
-  // Update on next/prev click
+  window.addEventListener("resize", () => {
+    const activeImg = slides[slideIndex].querySelector("img");
+    if (activeImg) slidesContainer.style.height = activeImg.clientHeight + "px";
+  });
   nextBtn?.addEventListener("click", () => {
     slideIndex = (slideIndex + 1) % slides.length;
     showSlide(slideIndex);
@@ -25,16 +44,11 @@ document.addEventListener("DOMContentLoaded", () => {
     showSlide(slideIndex);
   });
 
-  // Handle window resizing (maintain proper position)
-  window.addEventListener("resize", () => showSlide(slideIndex));
-
-  // Auto-slide every 5 seconds
   let autoSlide = setInterval(() => {
     slideIndex = (slideIndex + 1) % slides.length;
     showSlide(slideIndex);
   }, 5000);
 
-  // Pause auto-slide when hovering (optional UX enhancement)
   slidesContainer.addEventListener("mouseenter", () => clearInterval(autoSlide));
   slidesContainer.addEventListener("mouseleave", () => {
     autoSlide = setInterval(() => {
@@ -43,6 +57,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 5000);
   });
 
-  // Initialize first slide
   showSlide(slideIndex);
 });

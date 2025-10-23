@@ -3,17 +3,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggleButton = document.getElementById("menu-toggle");
   const navLinks = document.querySelectorAll("#sliding-menu a");
 
-  if (!navMenu || !toggleButton) return; // safety check
+  if (!navMenu || !toggleButton) return; 
 
-  // Toggle menu open/close
+
   toggleButton.addEventListener("click", () => {
     navMenu.classList.toggle("open");
-    // Toggle aria-expanded for accessibility
+  
     const isOpen = navMenu.classList.contains("open");
     toggleButton.setAttribute("aria-expanded", isOpen);
   });
 
-  // Close menu when a link is clicked
+
   navLinks.forEach(link => {
     link.addEventListener("click", () => {
       navMenu.classList.remove("open");
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Optional: Close menu when clicking outside of it
+
   document.addEventListener("click", (e) => {
     if (!navMenu.contains(e.target) && !toggleButton.contains(e.target)) {
       navMenu.classList.remove("open");

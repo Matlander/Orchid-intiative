@@ -5,32 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gallery | Orchid Initiative</title>
   <meta name="description" content="Explore the Orchid Initiative gallery — a visual journey of our community impact, orchard projects, and environmental efforts across Uganda." />
-
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-  <!-- Back Home Button -->
-  <a href="index.html" class="home-button" title="Back to Home">
-    🏡 Back Home
-  </a>
-
-  <!-- Hero Header -->
+  <div id="back-container"></div>
   <header class="hero-banner">
     <div class="overlay"></div>
     <h1>📸 Our Gallery</h1>
     <p>A visual journey through our community efforts and environmental achievements.</p>
   </header>
-
   <main>
-    <!-- Slideshow Gallery -->
     <section class="slideshow-gallery" aria-label="Orchid Initiative Gallery Slideshow">
       <button class="prev" aria-label="Previous Slide">&#10094;</button>
 
       <div class="slides">
-        <!-- Each slide includes descriptive alt text -->
         <div class="slide">
           <img src="images/img16.jpg" alt="Volunteers leading environmental awareness program" loading="lazy">
           <p class="caption">🌿 Environmental Awareness Drive</p>
@@ -114,8 +105,6 @@
 
       <button class="next" aria-label="Next Slide">&#10095;</button>
     </section>
-
-    <!-- Video Section -->
     <section id="video">
       <h2>🎬 Watch Our Story</h2>
       <div class="video-wrapper">
@@ -131,17 +120,16 @@
       </div>
     </section>
   </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>🌸 <a href="index.html" title="Return to Home">Back to Home</a></p>
-    <p>&copy; <span id="year"></span> Orchid Initiative. All rights reserved.</p>
-  </footer>
-
-  <!-- Scripts -->
   <script src="gallery.js"></script>
+  <script src="components.js"></script>
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("back-container").appendChild(
+        createBackButton("← Back to Home", "index.html")
+      );
+
+      insertFooter();
+    });
   </script>
 </body>
 </html>

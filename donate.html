@@ -5,19 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Donate & Volunteer | Orchid Initiative</title>
   <meta name="description" content="Support the Orchid Initiative through donations or volunteering. Help us empower communities, plant fruit trees, and promote environmental sustainability across Uganda." />
-
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-  <!-- Back Home Button -->
-  <a href="index.html" class="home-button" title="Back to Home">
-    🏡 Back Home
-  </a>
-
-  <!-- Hero Header -->
+  <div id="back-container"></div>
   <header class="hero-banner">
     <div class="overlay"></div>
     <h1>🤝 Support Orchid Initiative</h1>
@@ -25,7 +19,6 @@
   </header>
 
   <main>
-    <!-- Donate Section -->
     <section class="donate-options">
       <h2>How You Can Help</h2>
       <ul>
@@ -34,28 +27,25 @@
         <li>🌾 <strong>$50</strong> — Support a community orchard</li>
       </ul>
 
-      <p>We accept <strong>Mobile Money</strong>, <strong>PayPal</strong>, and <strong>direct bank transfers</strong>.  
+      <p>We accept <strong>Mobile Money</strong>, <strong>PayPal</strong>, and <strong>Direct Bank Transfers</strong>.  
       Every contribution — no matter the size — helps grow lasting change.</p>
 
       <h2>Ways to Donate</h2>
       <ul>
         <li><strong>📱 Mobile Money (MTN/Airtel):</strong> +256788258931</li>
         <li><strong>🏦 Bank Transfer:</strong> Global Orchard Initiative — Equity Bank — Acc. #1008101104024</li>
-        <!-- Optional PayPal or QR code -->
       </ul>
     </section>
 
-    <!-- Volunteer Form -->
     <section class="volunteer-form">
       <h2>Volunteer With Us</h2>
       <p>Want to dig in and grow change with us? We’d love to hear from you!</p>
 
-      <form action="https://formsubmit.co/goinetug@gmail.com" method="POST">
+      <form action="https://formsubmit.co/ayebaremat@gmail.com" method="POST">
         <input type="text" name="name" placeholder="Your Full Name" required />
         <input type="email" name="email" placeholder="Your Email Address" required />
         <textarea name="message" placeholder="Why you'd like to volunteer..." rows="5" required></textarea>
 
-        <!-- FormSubmit hidden options -->
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html">
 
@@ -63,16 +53,15 @@
       </form>
     </section>
   </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>Thank you for helping the Orchid Initiative grow 🌿</p>
-    <p><a href="index.html">🏡 Back Home</a></p>
-    <p>&copy; <span id="year"></span> Orchid Initiative. All rights reserved.</p>
-  </footer>
-
+  <script src="components.js"></script>
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("back-container").appendChild(
+        createBackButton("← Back to Home", "index.html")
+      );
+
+      insertFooter();
+    });
   </script>
 </body>
 </html>

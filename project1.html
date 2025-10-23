@@ -6,25 +6,21 @@
   <title>Orchard Farms Project | Orchid Initiative</title>
   <meta name="description" content="The Orchard Farms Project by Orchid Initiative establishes sustainable orchards in public institutions to promote nutrition, food security, and environmental awareness." />
 
+
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-  <!-- Back to Projects -->
-  <a href="projects.html" class="home-button" title="Back to projects">
-    🏡 Back to Projects
-  </a>
-
-  <!-- Header -->
+  
+  <div id="back-container"></div>
   <header class="hero-banner">
     <div class="overlay"></div>
     <h1>🌱 Orchard Farms in Public Institutions</h1>
     <p>Planting the seeds of sustainability across schools and communities.</p>
   </header>
 
-  <!-- Main Content -->
   <main>
     <section>
       <p>
@@ -43,7 +39,6 @@
       </a>
     </section>
 
-    <!-- Gallery -->
     <section id="gallery">
       <h2>Project Gallery</h2>
       <div class="gallery-container">
@@ -53,16 +48,17 @@
       </div>
     </section>
   </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>🌸 <a href="index.html">Back to Home</a></p>
-    <p>&copy; <span id="year"></span> Orchid Initiative. All rights reserved.</p>
-  </footer>
-
+  <script src="components.js"></script>
   <script>
-    // Update footer year
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.addEventListener("DOMContentLoaded", () => {
+      
+      document.getElementById("back-container").appendChild(
+        createBackButton("← Back to Projects", "projects.html")
+      );
+
+    
+      insertFooter();
+    });
   </script>
 </body>
 </html>

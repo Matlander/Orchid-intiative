@@ -12,19 +12,12 @@
 </head>
 
 <body>
-  <!-- Back Home Button -->
-  <a href="index.html" class="home-button" title="Back to Home">
-    🏡 Back Home
-  </a>
-
-  <!-- Hero Header -->
   <header class="hero-banner">
     <div class="overlay"></div>
     <h1>🌸 About Orchid Initiative</h1>
     <p>Rooted in community. Growing for the planet.</p>
   </header>
 
-  <!-- Main Content -->
   <main>
     <section class="about-section">
       <h2>Our Beginning</h2>
@@ -77,15 +70,11 @@
     </div>
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>📧 Email: <a href="mailto:goinetug@gmail.com">goinetug@gmail.com</a></p>
-    <p>📍 Busia District, Uganda</p>
-    <p>&copy; <span id="year"></span> Orchid Initiative. All rights reserved.</p>
-  </footer>
-
+  <script src="components.js"></script>
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.addEventListener("DOMContentLoaded", () => {
+      insertFooter();
+    });
   </script>
 </body>
 </html>

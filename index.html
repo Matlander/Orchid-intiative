@@ -7,19 +7,17 @@
   <meta name="description" content="The Orchid Initiative is a community-based organization in Busia, Uganda, empowering communities through orchard farming, afforestation, and sustainable agriculture." />
   <link rel="icon" href="images/favicon.ico" />
 
-  <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- Skip Link for Accessibility -->
+
   <a href="#mission" class="skip-link">Skip to content</a>
 
-  <!-- Header / Hero Section -->
+  
   <header class="hero-banner">
     <div class="overlay"></div>
     <img src="images/logo.jpg" alt="Orchid Initiative logo" class="logo" />
@@ -30,7 +28,6 @@
     </button>
   </header>
 
-  <!-- Navigation -->
   <nav id="sliding-menu" aria-label="Main navigation">
     <ul>
       <li><a href="#mission">Mission</a></li>
@@ -41,9 +38,8 @@
     </ul>
   </nav>
 
-  <!-- Main Content -->
+
   <main>
-    <!-- Mission -->
     <section id="mission">
       <h2>Our Mission</h2>
       <p>
@@ -65,7 +61,6 @@
       <p><strong>Partners:</strong> Busia Forest, Natural Resource, Health & Education Departments</p>
     </section>
 
-    <!-- Gallery -->
     <section id="gallery">
       <h2>Gallery</h2>
       <div class="gallery-container">
@@ -74,7 +69,6 @@
       </div>
     </section>
 
-    <!-- Video -->
     <section id="video">
       <h2>Watch Our Story</h2>
       <div class="video-wrapper">
@@ -90,7 +84,6 @@
       </div>
     </section>
 
-    <!-- Impact -->
     <section id="impact">
       <h2>Impact at a Glance</h2>
       <ul>
@@ -100,7 +93,6 @@
       </ul>
     </section>
 
-    <!-- Donate -->
     <section id="donate">
       <h2>Support Us</h2>
       <p>Your donation fuels our work. Join us in growing hope across Uganda.</p>
@@ -108,8 +100,7 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer id="contact">
+  <footer id="contact" class="site-footer">
     <p>📧 Email: <a href="mailto:goinetug@gmail.com">goinetug@gmail.com</a></p>
     <p>📍 Buyiye Village, Busikho Parish, Masinya Subcounty, Busia, Uganda</p>
     <p>Connect with us:</p>
@@ -118,15 +109,17 @@
       <a href="https://twitter.com/goinetug" target="_blank" aria-label="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
       <a href="https://instagram.com/goinetug" target="_blank" aria-label="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
     </div>
-    <p>&copy; <span id="year"></span> Orchid Initiative. All rights reserved.</p>
+    <p>© <span id="year"></span> Orchid Initiative. All rights reserved.</p>
   </footer>
 
-  <!-- WhatsApp Button -->
   <a href="https://wa.me/+256788258931" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <!-- JavaScript -->
+  <script src="components.js"></script>
   <script src="scripts.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

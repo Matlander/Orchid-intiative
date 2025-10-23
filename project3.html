@@ -5,26 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Women Empowerment & Healthcare Development | Orchid Initiative</title>
   <meta name="description" content="The Women Empowerment & Healthcare Development project by Orchid Initiative strengthens women’s participation in agriculture, healthcare awareness, and sustainable community leadership in Uganda." />
-
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-  <!-- Back to Projects Button -->
-  <a href="projects.html" class="home-button" title="Back to projects">
-    🏡 Back to Projects
-  </a>
+  <div id="back-container"></div>
 
-  <!-- Hero Header -->
   <header class="hero-banner">
     <div class="overlay"></div>
     <h1>👩‍🌾 Women Empowerment & Healthcare Development</h1>
     <p>Building healthier communities through women-led initiatives and sustainable practices.</p>
   </header>
 
-  <!-- Main Content -->
   <main>
     <section>
       <p>
@@ -44,7 +38,6 @@
       </a>
     </section>
 
-    <!-- Gallery -->
     <section id="gallery">
       <h2>Project Gallery</h2>
       <div class="gallery-container">
@@ -54,7 +47,6 @@
       </div>
     </section>
 
-    <!-- Optional Impact Section -->
     <section id="impact">
       <h2>Project Impact</h2>
       <ul>
@@ -64,16 +56,15 @@
       </ul>
     </section>
   </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>🌸 <a href="index.html">Back to Home</a></p>
-    <p>&copy; <span id="year"></span> Orchid Initiative. All rights reserved.</p>
-  </footer>
-
+  <script src="components.js"></script>
   <script>
-    // Auto-update footer year
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("back-container").appendChild(
+        createBackButton("← Back to Projects", "projects.html")
+      );
+
+      insertFooter();
+    });
   </script>
 </body>
 </html>

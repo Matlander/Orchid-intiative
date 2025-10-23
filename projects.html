@@ -5,26 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Our Projects | Orchid Initiative</title>
   <meta name="description" content="Explore Orchid Initiative's active projects promoting orchard farming, women empowerment, and community health across Uganda." />
-
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-  <!-- Back Home Button -->
-  <a href="index.html" class="home-button" title="Back to Home">
-    🏡 Back Home
-  </a>
-
-  <!-- Hero Banner -->
+  <div id="back-container"></div>
   <header class="hero-banner">
     <div class="overlay"></div>
     <h1>🌱 Our Projects</h1>
     <p>Explore the initiatives transforming lives and landscapes across Uganda.</p>
   </header>
-
-  <!-- Project Overview Section -->
   <main>
     <section class="project-list">
       <h2>Featured Initiatives</h2>
@@ -52,7 +44,6 @@
       </div>
     </section>
 
-    <!-- Active Projects List -->
     <section id="projects">
       <h2>Active Projects</h2>
       <ul>
@@ -63,15 +54,14 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>🌸 <a href="index.html">Back to Home</a></p>
-    <p>&copy; <span id="year"></span> Orchid Initiative. All rights reserved.</p>
-  </footer>
-
+  <script src="components.js"></script>
   <script>
-    // Auto-update footer year
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("back-container").appendChild(
+        createBackButton("← Back to Home", "index.html")
+      );
+      insertFooter();
+    });
   </script>
 </body>
 </html>

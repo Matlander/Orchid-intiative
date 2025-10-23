@@ -62,8 +62,8 @@ header.hero-banner .logo {
   width: 120px;
   border-radius: 50%;
   margin-bottom: 1rem;
-  z-index: 2;
   position: relative;
+  z-index: 2;
 }
 
 header.hero-banner h1 {
@@ -149,10 +149,9 @@ section {
   padding: 3rem 1.5rem;
   text-align: center;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 2rem auto 0;
   background: rgba(255, 255, 255, 0.85);
   border-radius: 10px;
-  margin-top: 2rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -179,6 +178,7 @@ section ul {
   padding: 0;
   margin: 1rem 0;
 }
+
 section ul li {
   background-color: #f0f8f7;
   padding: 0.75rem;
@@ -186,6 +186,7 @@ section ul li {
   border-radius: 5px;
   transition: transform 0.3s ease;
 }
+
 section ul li:hover {
   transform: translateY(-2px);
 }
@@ -198,12 +199,14 @@ section ul li:hover {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
 }
+
 .gallery-container img {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
+
 .gallery-container img:hover {
   transform: scale(1.05);
 }
@@ -230,6 +233,7 @@ section ul li:hover {
   list-style: none;
   padding: 0;
 }
+
 #impact li {
   background: #a9dbb0;
   padding: 1rem 1.5rem;
@@ -238,6 +242,7 @@ section ul li:hover {
   color: #1e1e1e;
   transition: transform 0.3s ease;
 }
+
 #impact li:hover {
   transform: translateY(-4px);
 }
@@ -256,6 +261,7 @@ section ul li:hover {
   margin-top: 1rem;
   transition: background 0.3s ease, transform 0.2s ease;
 }
+
 #donate button:hover {
   background-color: #357b6b;
   transform: scale(1.05);
@@ -271,18 +277,22 @@ footer {
   color: white;
   margin-top: 3rem;
 }
+
 footer a {
   color: #fff;
   margin: 0 0.5rem;
   transition: color 0.3s ease;
 }
+
 footer a:hover {
   color: #fddde6;
 }
+
 footer .social-links i {
   margin: 0.5rem;
   transition: transform 0.3s ease;
 }
+
 footer .social-links i:hover {
   transform: scale(1.2);
 }
@@ -308,9 +318,59 @@ footer .social-links i:hover {
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .whatsapp-float:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* ==============================
+   🌸 REUSABLE COMPONENTS
+   ============================== */
+.back-home-btn {
+  background-color: #2e8b57;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 20px 0;
+}
+
+.back-home-btn:hover {
+  background-color: #256c46;
+  transform: translateY(-2px);
+}
+
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #edf6f3;
+  border-top: 1px solid #d8eae3;
+  color: #333;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+.site-footer a {
+  color: #2e8b57;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+#back-container {
+  padding: 20px;
+  text-align: left;
+  position: relative;
+  z-index: 10;
 }
 
 /* ==============================
@@ -348,239 +408,73 @@ footer .social-links i:hover {
   }
 }
 /* ==============================
-   🌸 PROJECTS PAGE STYLING
+   📸 SLIDESHOW GALLERY
    ============================== */
-
-.project-list {
-  text-align: center;
-  padding: 3rem 1rem;
+.slideshow-gallery {
+  position: relative;
+  max-width: 900px;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
 }
 
-.project-list h2 {
-  color: #2e2e2e;
-  margin-bottom: 2rem;
-  font-size: 1.8rem;
+.slides {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-  max-width: 1000px;
+.slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
   margin: 0 auto;
 }
 
-.project-card {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.project-card img {
+.caption {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  border-radius: 10px;
-  margin-bottom: 1rem;
+  border-radius: 0 0 10px 10px;
 }
 
-.project-card h3 {
-  color: #357b6b;
-  margin-bottom: 0.5rem;
-  font-size: 1.3rem;
-}
-
-.project-card p {
-  font-size: 1rem;
-  color: #444;
-  margin-bottom: 1rem;
-}
-
-/* Active Projects Section */
-#projects {
-  background: #f0f8f7;
-  padding: 2.5rem 1rem;
-  text-align: center;
-  border-radius: 12px;
-  margin: 2rem auto;
-  max-width: 800px;
-}
-
-#projects h2 {
-  color: #2e2e2e;
-  margin-bottom: 1rem;
-}
-
-#projects ul {
-  list-style: none;
-  padding: 0;
-}
-
-#projects li {
-  margin: 1rem 0;
-}
-
-#projects a {
-  font-size: 1.1rem;
-  color: #357b6b;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-#projects a:hover {
-  color: #1e5a4a;
-}
-/* ==============================
-   💖 DONATE & VOLUNTEER PAGE
-   ============================== */
-.donate-options, .volunteer-form {
-  text-align: center;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 2.5rem 1.5rem;
-  margin: 2rem auto;
-  max-width: 800px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.donate-options h2, .volunteer-form h2 {
-  color: #357b6b;
-  margin-bottom: 1rem;
-}
-
-.donate-options ul {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0;
-}
-
-.donate-options li {
-  background: #edf6f3;
-  padding: 0.8rem 1rem;
-  border-radius: 8px;
-  margin: 0.5rem 0;
-  font-size: 1.05rem;
-  font-weight: 600;
-}
-
-.volunteer-form form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 600px;
-  margin: 1.5rem auto;
-}
-
-.volunteer-form input,
-.volunteer-form textarea {
-  padding: 0.75rem;
-  border: 1px solid #c8e0d3;
-  border-radius: 8px;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1rem;
-  background-color: #f8fcfa;
-}
-
-.volunteer-form input:focus,
-.volunteer-form textarea:focus {
-  outline: none;
-  border-color: #4c9c8d;
-  box-shadow: 0 0 4px rgba(76, 156, 141, 0.4);
-}
-
-.volunteer-form button {
-  background-color: #4c9c8d;
+/* Navigation buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(76, 156, 141, 0.8);
   color: white;
   border: none;
-  padding: 0.9rem 2rem;
-  border-radius: 5px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.volunteer-form button:hover {
-  background-color: #357b6b;
-  transform: scale(1.05);
-}
-
-/* Responsive Adjustments */
-@media screen and (max-width: 480px) {
-  .donate-options, .volunteer-form {
-    padding: 2rem 1rem;
-  }
-  .volunteer-form input, .volunteer-form textarea {
-    font-size: 0.95rem;
-  }
-}
-/* ==============================
-   🌸 ABOUT PAGE STYLING
-   ============================== */
-.about-section {
-  background: rgba(255, 255, 255, 0.9);
-  padding: 2.5rem 1.5rem;
-  margin: 2rem auto;
-  max-width: 900px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: left;
-}
-
-.about-section h2 {
-  color: #357b6b;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.about-section p {
-  line-height: 1.7;
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-.about-section ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 1rem;
-}
-
-.about-section li {
-  background: #edf6f3;
-  margin: 0.5rem 0;
   padding: 0.75rem 1rem;
-  border-radius: 8px;
-  font-weight: 600;
-}
-
-.about-cta {
-  text-align: center;
-  margin: 3rem 0;
-}
-
-.about-cta button {
-  background-color: #4c9c8d;
-  color: white;
-  border: none;
-  padding: 0.9rem 2rem;
-  border-radius: 8px;
-  font-size: 1.1rem;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  z-index: 10;
+  transition: background 0.3s ease;
 }
 
-.about-cta button:hover {
+.prev:hover, .next:hover {
   background-color: #357b6b;
-  transform: scale(1.05);
 }
 
-@media screen and (max-width: 600px) {
-  .about-section {
-    padding: 2rem 1rem;
+.prev { left: 15px; }
+.next { right: 15px; }
+
+@media screen and (max-width: 768px) {
+  .caption {
+    font-size: 0.9rem;
+  }
+  .prev, .next {
+    font-size: 1.2rem;
+    padding: 0.5rem 0.7rem;
   }
 }

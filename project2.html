@@ -12,19 +12,14 @@
 </head>
 
 <body>
-  <!-- Back to Projects Button -->
-  <a href="projects.html" class="home-button" title="Back to projects">
-    🏡 Back to Projects
-  </a>
+  <div id="back-container"></div>
 
-  <!-- Hero Header -->
   <header class="hero-banner">
     <div class="overlay"></div>
     <h1>🌳 Community Orchard Expansion</h1>
     <p>Growing trees, empowering communities, restoring balance.</p>
   </header>
 
-  <!-- Main Content -->
   <main>
     <section>
       <p>
@@ -44,7 +39,6 @@
       </a>
     </section>
 
-    <!-- Gallery -->
     <section id="gallery">
       <h2>Project Gallery</h2>
       <div class="gallery-container">
@@ -54,7 +48,7 @@
       </div>
     </section>
 
-    <!-- Optional Impact Section -->
+
     <section id="impact">
       <h2>Project Impact</h2>
       <ul>
@@ -65,15 +59,17 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>🌸 <a href="index.html">Back to Home</a></p>
-    <p>&copy; <span id="year"></span> Orchid Initiative. All rights reserved.</p>
-  </footer>
-
+  <script src="components.js"></script>
   <script>
-    // Update footer year dynamically
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.addEventListener("DOMContentLoaded", () => {
+
+      document.getElementById("back-container").appendChild(
+        createBackButton("← Back to Projects", "projects.html")
+      );
+
+  
+      insertFooter();
+    });
   </script>
 </body>
 </html>
