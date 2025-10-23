@@ -3,52 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Projects - Orchid Initiative</title>
+  <title>Our Projects | Orchid Initiative</title>
+  <meta name="description" content="Explore Orchid Initiative's active projects promoting orchard farming, women empowerment, and community health across Uganda." />
+
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-   <!-- Back Home Button -->
-<a href="index.html" class="home-button" title="Back to Home">
-  🏡 Back Home
-</a>
-  <header>
+  <!-- Back Home Button -->
+  <a href="index.html" class="home-button" title="Back to Home">
+    🏡 Back Home
+  </a>
+
+  <!-- Hero Banner -->
+  <header class="hero-banner">
+    <div class="overlay"></div>
     <h1>🌱 Our Projects</h1>
     <p>Explore the initiatives transforming lives and landscapes across Uganda.</p>
   </header>
 
-  <section class="project-list">
-    <article>
-      <h2>Orchard Farms in Institutions</h2>
-      <p>Creating fruit orchards in schools and community spaces to boost nutrition and education.</p>
-    </article>
-    <article>
-      <h2>School Workshops</h2>
-      <p>Engaging students in hands-on environmental education and farming practices.</p>
-    </article>
-    <article>
-      <h2>Women Empowerment</h2>
-      <p>Supporting women with horticulture training, business skills, and planting kits.</p>
-    </article>
-    <article>
-      <h2>Community Nutrition</h2>
-      <p>Teaching sustainable food practices and improving dietary habits through local produce.</p>
-    </article>
-    <article>
-      <h2>Youth Horticulture Training</h2>
-      <p>Equipping young people with practical farming knowledge and green career pathways.</p>
-    </article>
-  </section>
-  <section id="projects">
-    <h2>Active Projects</h2>
-    <ul>
-      <li><a href="project1.html">🌱 Orchard Farms in Institutions</a></li>
-      <li><a href="project2.html">📚 School Workshops</a></li>
-      <li><a href="project3.html">👩‍🌾 Women Empowerment</a></li>
-    </ul>
-  </section>
+  <!-- Project Overview Section -->
+  <main>
+    <section class="project-list">
+      <h2>Featured Initiatives</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <img src="images/img11.jpg" alt="Orchard farms in public institutions" loading="lazy">
+          <h3>🌿 Orchard Farms in Institutions</h3>
+          <p>Creating fruit orchards in schools and community spaces to boost nutrition and education.</p>
+          <a href="project1.html"><button>View Project</button></a>
+        </article>
 
+        <article class="project-card">
+          <img src="images/img1.jpg" alt="Community orchard expansion" loading="lazy">
+          <h3>🌳 Community Orchard Expansion</h3>
+          <p>Establishing fruit tree orchards in local communities to promote afforestation and income generation.</p>
+          <a href="project2.html"><button>View Project</button></a>
+        </article>
+
+        <article class="project-card">
+          <img src="images/img6.jpg" alt="Women empowerment and healthcare development" loading="lazy">
+          <h3>👩‍🌾 Women Empowerment & Healthcare</h3>
+          <p>Empowering women through agriculture, healthcare awareness, and business training for sustainable change.</p>
+          <a href="project3.html"><button>View Project</button></a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Active Projects List -->
+    <section id="projects">
+      <h2>Active Projects</h2>
+      <ul>
+        <li><a href="project1.html">🌱 Orchard Farms in Institutions</a></li>
+        <li><a href="project2.html">🌳 Community Orchard Expansion</a></li>
+        <li><a href="project3.html">👩‍🌾 Women Empowerment & Healthcare</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
   <footer>
-    <p><a href="index.html">🏡 Back Home</a></p>
+    <p>🌸 <a href="index.html">Back to Home</a></p>
+    <p>&copy; <span id="year"></span> Orchid Initiative. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Auto-update footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

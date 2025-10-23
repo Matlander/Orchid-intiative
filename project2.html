@@ -2,36 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Orchard Farms Project</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <!-- Back Home Button -->
-<a href="projects.html" class="home-button" title="Back to projects">
-  🏡 Back to Projects
-</a>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community Orchard Expansion | Orchid Initiative</title>
+  <meta name="description" content="The Community Orchard Expansion project by Orchid Initiative promotes afforestation and fruit tree planting across Ugandan communities to enhance food security and environmental restoration." />
 
-  <header>
-    <h1>🌱 Orchard Farms in Public Institutions</h1>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Back to Projects Button -->
+  <a href="projects.html" class="home-button" title="Back to projects">
+    🏡 Back to Projects
+  </a>
+
+  <!-- Hero Header -->
+  <header class="hero-banner">
+    <div class="overlay"></div>
+    <h1>🌳 Community Orchard Expansion</h1>
+    <p>Growing trees, empowering communities, restoring balance.</p>
   </header>
 
+  <!-- Main Content -->
   <main>
-    <p>This project aims to establish orchard farms across schools, hospitals, and local government grounds to promote food security, nutrition, and environmental awareness.</p>
-    <p>We collaborate with Busia District authorities and train youth in sustainable agriculture.</p>
-    <a href="donate.html"><button>Donate to This Project</button></a>
-  </main>
-   <!-- Gallery -->
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-container">
-      <img src="images/img1.jpg" alt="Orchard planting">
-      <img src="images/img2.jpg" alt="Environmental workshop">
-      <img src="images/img4.jpg" alt="Community gathering">
-    </div>
-  </section>
+    <section>
+      <p>
+        The <strong>Community Orchard Expansion Project</strong> focuses on establishing and maintaining 
+        fruit orchards in rural and peri-urban areas of Busia and surrounding districts. By working 
+        directly with local communities, we help create a sustainable source of food, income, and environmental resilience.
+      </p>
 
+      <p>
+        Through hands-on training in orchard management and fruit tree care, 
+        we empower families, schools, and youth groups to actively participate in reforestation 
+        and agricultural innovation — nurturing both the land and livelihoods.
+      </p>
+
+      <a href="donate.html">
+        <button>🌿 Support This Project</button>
+      </a>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <h2>Project Gallery</h2>
+      <div class="gallery-container">
+        <img src="images/img1.jpg" alt="Community members planting fruit trees together" loading="lazy">
+        <img src="images/img2.jpg" alt="Environmental workshop training participants" loading="lazy">
+        <img src="images/img4.jpg" alt="Local leaders participating in a community tree planting day" loading="lazy">
+      </div>
+    </section>
+
+    <!-- Optional Impact Section -->
+    <section id="impact">
+      <h2>Project Impact</h2>
+      <ul>
+        <li>🌿 5,000+ fruit trees planted across communities</li>
+        <li>👩‍🌾 250 youth trained in orchard management</li>
+        <li>🏘️ 20 community orchards established and maintained</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
   <footer>
-    <p><a href="index.html">← Back to Home</a></p>
+    <p>🌸 <a href="index.html">Back to Home</a></p>
+    <p>&copy; <span id="year"></span> Orchid Initiative. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Update footer year dynamically
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

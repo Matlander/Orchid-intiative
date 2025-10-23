@@ -3,105 +3,130 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Orchid Initiative</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Orchid Initiative | Conserve. Enhance. Empower.</title>
+  <meta name="description" content="The Orchid Initiative is a community-based organization in Busia, Uganda, empowering communities through orchard farming, afforestation, and sustainable agriculture." />
+  <link rel="icon" href="images/favicon.ico" />
+
+  <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
- 
-<body>
-  
 
-  <!-- Hero Banner -->
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Skip Link for Accessibility -->
+  <a href="#mission" class="skip-link">Skip to content</a>
+
+  <!-- Header / Hero Section -->
   <header class="hero-banner">
-    <img src="images/logo.jpg" alt="Orchid Initiative Logo" class="logo" />
+    <div class="overlay"></div>
+    <img src="images/logo.jpg" alt="Orchid Initiative logo" class="logo" />
     <h1>🌸 Orchid Initiative</h1>
     <p>Conserve. Enhance. Empower.</p>
+    <button id="menu-toggle" aria-label="Toggle navigation menu">
+      <i class="fas fa-bars"></i>
+    </button>
   </header>
 
-  <!-- Menu Toggle Button -->
-  <button id="menu-toggle" title="Open Menu">
-    <i class="fas fa-bars"></i>
-  </button>
-
-  <nav id="sliding-menu">
-  <ul>
-    <li><a href="#mission">Mission</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="donate.html">Donate</a></li>
-    <li><a href="about.html">About</a></li>
-  </ul>
-</nav>
-
-  <!-- Content Sections -->
-  <section id="mission">
-    <h2>Our Mission</h2>
-    <p>Global Orchard Initiative Network is a community-based organization in Busia District focusing on orchards, afforestation, environmental conservation, and agriculture-based empowerment.</p>
-    <h3>Objectives</h3>
+  <!-- Navigation -->
+  <nav id="sliding-menu" aria-label="Main navigation">
     <ul>
-      <li>Modern fruit farming and sustainable environmental practices</li>
-      <li>Urban and rural orchard promotion</li>
-      <li>Food security and nutrition awareness</li>
-      <li>Horticulture opportunities for women and youth</li>
-      <li>Community education and agri-business hubs</li>
-      <li>Nursery management and fruit tree propagation</li>
+      <li><a href="#mission">Mission</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="about.html">About</a></li>
     </ul>
-    <p><strong>Established:</strong> 2008</p>
-    <p><strong>Partners:</strong> Busia Forest, Natural Resource, Health & Education Departments</p>
-  </section>
+  </nav>
 
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-container">
-      <img src="images/img1.jpg" alt="Orchard planting">
-      <img src="images/img2.jpg" alt="Environmental workshop">
-    </div>
-  </section>
+  <!-- Main Content -->
+  <main>
+    <!-- Mission -->
+    <section id="mission">
+      <h2>Our Mission</h2>
+      <p>
+        The Global Orchard Initiative Network is a community-based organization in Busia District
+        focusing on orchards, afforestation, environmental conservation, and agriculture-based empowerment.
+      </p>
 
-  <section id="video">
-    <h2>Watch Our Story</h2>
-    <iframe width="100%" height="315"
-  src="https://www.youtube.com/embed/DTbm0u5U1ls"
-  title="Orchid Initiative Video"
-  frameborder="0"
-  allowfullscreen></iframe>
+      <h3>Objectives</h3>
+      <ul>
+        <li>Modern fruit farming and sustainable environmental practices</li>
+        <li>Urban and rural orchard promotion</li>
+        <li>Food security and nutrition awareness</li>
+        <li>Horticulture opportunities for women and youth</li>
+        <li>Community education and agri-business hubs</li>
+        <li>Nursery management and fruit tree propagation</li>
+      </ul>
 
-  </section>
+      <p><strong>Established:</strong> 2008</p>
+      <p><strong>Partners:</strong> Busia Forest, Natural Resource, Health & Education Departments</p>
+    </section>
 
-  
+    <!-- Gallery -->
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-container">
+        <img src="images/img1.jpg" alt="Community orchard planting" loading="lazy">
+        <img src="images/img2.jpg" alt="Environmental workshop with farmers" loading="lazy">
+      </div>
+    </section>
 
-  <section id="impact">
-    <h2>Impact at a Glance</h2>
-    <ul>
-      <li>🌿 3,000+ trees planted</li>
-      <li>👩‍🌾 400+ women trained</li>
-      <li>🏫 12 schools supported</li>
-    </ul>
-  </section>
+    <!-- Video -->
+    <section id="video">
+      <h2>Watch Our Story</h2>
+      <div class="video-wrapper">
+        <iframe
+          width="100%"
+          height="315"
+          loading="lazy"
+          src="https://www.youtube.com/embed/DTbm0u5U1ls"
+          title="Orchid Initiative: Our Story"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
 
-  <section id="donate">
-    <h2>Support Us</h2>
-    <p>Your donation fuels our work. Join us in growing hope across Uganda.</p>
-    <a href="donate.html"><button>Donate Now</button></a>
-  </section>
+    <!-- Impact -->
+    <section id="impact">
+      <h2>Impact at a Glance</h2>
+      <ul>
+        <li>🌿 3,000+ trees planted</li>
+        <li>👩‍🌾 400+ women trained</li>
+        <li>🏫 12 schools supported</li>
+      </ul>
+    </section>
+
+    <!-- Donate -->
+    <section id="donate">
+      <h2>Support Us</h2>
+      <p>Your donation fuels our work. Join us in growing hope across Uganda.</p>
+      <a href="donate.html"><button>Donate Now</button></a>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer id="contact">
-    <p>📧 Email: goinetug@gmail.com</p>
-    <p>📍 BUYIYE VILLAGE, BUSIKHO PARISH, MASINYA SUBCOUNTY, Busia, Uganda</p>
+    <p>📧 Email: <a href="mailto:goinetug@gmail.com">goinetug@gmail.com</a></p>
+    <p>📍 Buyiye Village, Busikho Parish, Masinya Subcounty, Busia, Uganda</p>
     <p>Connect with us:</p>
-    <a href="https://www.facebook.com/share/p/1FnyU5En1f/" target="_blank" title="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
-    <a href="https://twitter.com/goinetug" target="_blank" title="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
-    <a href="https://instagram.com/goinetug" target="_blank" title="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+    <div class="social-links">
+      <a href="https://www.facebook.com/share/p/1FnyU5En1f/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="https://twitter.com/goinetug" target="_blank" aria-label="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://instagram.com/goinetug" target="_blank" aria-label="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+    </div>
+    <p>&copy; <span id="year"></span> Orchid Initiative. All rights reserved.</p>
   </footer>
 
   <!-- WhatsApp Button -->
-  <a href="https://wa.me/+256788258931" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+  <a href="https://wa.me/+256788258931" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <!-- JavaScript File -->
+  <!-- JavaScript -->
   <script src="scripts.js"></script>
 </body>
 </html>

@@ -3,108 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery - Orchid Initiative</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <title>Gallery | Orchid Initiative</title>
+  <meta name="description" content="Explore the Orchid Initiative gallery — a visual journey of our community impact, orchard projects, and environmental efforts across Uganda." />
 
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
   <!-- Back Home Button -->
   <a href="index.html" class="home-button" title="Back to Home">
     🏡 Back Home
   </a>
 
-  <header>
+  <!-- Hero Header -->
+  <header class="hero-banner">
+    <div class="overlay"></div>
     <h1>📸 Our Gallery</h1>
     <p>A visual journey through our community efforts and environmental achievements.</p>
   </header>
 
   <main>
-    <section class="slideshow-gallery" aria-label="Orchid Initiative Slideshow">
+    <!-- Slideshow Gallery -->
+    <section class="slideshow-gallery" aria-label="Orchid Initiative Gallery Slideshow">
       <button class="prev" aria-label="Previous Slide">&#10094;</button>
 
       <div class="slides">
-        <!-- Slide 1 -->
+        <!-- Each slide includes descriptive alt text -->
         <div class="slide">
-          <img src="images/img16.jpg" alt="Orchard planting" loading="lazy">
-          <p class="caption">environmental awareness</p>
+          <img src="images/img16.jpg" alt="Volunteers leading environmental awareness program" loading="lazy">
+          <p class="caption">🌿 Environmental Awareness Drive</p>
         </div>
 
-        <!-- Slide 2 -->
         <div class="slide">
-          <img src="images/img15.jpg" alt="Environmental workshop" loading="lazy">
-          <p class="caption">Orchard planting</p>
+          <img src="images/img15.jpg" alt="Young students planting fruit trees in Busia" loading="lazy">
+          <p class="caption">🌱 Orchard Planting in Schools</p>
         </div>
 
-        <!-- Additional Slides -->
         <div class="slide">
-          <img src="images/img14.jpg" alt="Community engagement" loading="lazy">
+          <img src="images/img14.jpg" alt="Community members attending engagement meeting" loading="lazy">
           <p class="caption">👥 Community Engagement</p>
         </div>
+
         <div class="slide">
-          <img src="images/img13.jpg" alt="Sustainable farming" loading="lazy">
-          <p class="caption">🌾 community engagement</p>
+          <img src="images/img13.jpg" alt="Local farmers practicing sustainable farming techniques" loading="lazy">
+          <p class="caption">🌾 Sustainable Farming Training</p>
         </div>
+
         <div class="slide">
-          <img src="images/img12.jpg" alt="Education support" loading="lazy">
-          <p class="caption">project discussions</p>
-        </div><div class="slide">
-          <img src="images/img11.jpg" alt="Education support" loading="lazy">
-          <p class="caption">🎓 Supporting farmers</p>
-        </div><div class="slide">
-          <img src="images/img10.jpg" alt="Education support" loading="lazy">
-          <p class="caption">🎓 Education Support</p>
-        </div><div class="slide">
-          <img src="images/img9.jpg" alt="Education support" loading="lazy">
-          <p class="caption">🎓 Education Support</p>
-        </div><div class="slide">
-          <img src="images/img8.jpg" alt="Education support" loading="lazy">
-          <p class="caption">🎓 Education Support</p>
-        </div><div class="slide">
-          <img src="images/img7.jpg" alt="Education support" loading="lazy">
-          <p class="caption">healthcare Engagement</p>
-        </div><div class="slide">
-          <img src="images/img6.jpg" alt="Education support" loading="lazy">
-          <p class="caption">🎓 women Education</p>
-        </div><div class="slide">
-          <img src="images/img5.jpg" alt="Education support" loading="lazy">
-          <p class="caption">🎓 Education Support</p>
-        </div><div class="slide">
-          <img src="images/img4.jpg" alt="Education support" loading="lazy">
+          <img src="images/img12.jpg" alt="District officials during project discussion" loading="lazy">
+          <p class="caption">💬 Project Discussions</p>
+        </div>
+
+        <div class="slide">
+          <img src="images/img11.jpg" alt="Farmers supported through orchard training" loading="lazy">
+          <p class="caption">🎓 Supporting Farmers</p>
+        </div>
+
+        <div class="slide">
+          <img src="images/img10.jpg" alt="Students participating in tree planting" loading="lazy">
           <p class="caption">🎓 Education Support</p>
         </div>
+
         <div class="slide">
-          <img src="images/img3.jpg" alt="Education support" loading="lazy">
-          <p class="caption">🎓 Education Support</p>
-        </div><div class="slide">
-          <img src="images/img2.jpg" alt="Education support" loading="lazy">
-          <p class="caption">🎓 Education Support</p>
-        </div><div class="slide">
-          <img src="images/img1.jpg" alt="Education support" loading="lazy">
-          <p class="caption">girl child Education</p>
+          <img src="images/img9.jpg" alt="Community members attending nutrition training" loading="lazy">
+          <p class="caption">🥭 Nutrition Awareness</p>
+        </div>
+
+        <div class="slide">
+          <img src="images/img8.jpg" alt="Healthcare engagement and awareness program" loading="lazy">
+          <p class="caption">🏥 Healthcare Engagement</p>
+        </div>
+
+        <div class="slide">
+          <img src="images/img7.jpg" alt="Women in a workshop on community leadership" loading="lazy">
+          <p class="caption">👩‍🌾 Women in Leadership</p>
+        </div>
+
+        <div class="slide">
+          <img src="images/img6.jpg" alt="Women receiving orchard and agriculture training" loading="lazy">
+          <p class="caption">💗 Women Empowerment</p>
+        </div>
+
+        <div class="slide">
+          <img src="images/img5.jpg" alt="School orchard with fruit trees in full growth" loading="lazy">
+          <p class="caption">🌳 Thriving School Orchard</p>
+        </div>
+
+        <div class="slide">
+          <img src="images/img4.jpg" alt="Community members showcasing orchard harvest" loading="lazy">
+          <p class="caption">🍎 Community Harvest</p>
+        </div>
+
+        <div class="slide">
+          <img src="images/img3.jpg" alt="Group of young volunteers planting fruit trees" loading="lazy">
+          <p class="caption">🌱 Youth Volunteers</p>
+        </div>
+
+        <div class="slide">
+          <img src="images/img2.jpg" alt="Women farmers celebrating successful planting" loading="lazy">
+          <p class="caption">👩‍🌾 Women in Agriculture</p>
+        </div>
+
+        <div class="slide">
+          <img src="images/img1.jpg" alt="Girl students participating in environmental education" loading="lazy">
+          <p class="caption">🎓 Girl Child Education</p>
         </div>
       </div>
 
       <button class="next" aria-label="Next Slide">&#10095;</button>
     </section>
 
+    <!-- Video Section -->
     <section id="video">
       <h2>🎬 Watch Our Story</h2>
-      <iframe
-        width="100%"
-        height="315"
-        src="https://www.youtube.com/embed/DTbm0u5U1ls"
-        title="Orchid Initiative Video"
-        frameborder="0"
-        allowfullscreen>
-      </iframe>
+      <div class="video-wrapper">
+        <iframe
+          width="100%"
+          height="315"
+          loading="lazy"
+          src="https://www.youtube.com/embed/DTbm0u5U1ls"
+          title="Orchid Initiative - Our Story"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p><a href="index.html" title="Return to Home">🏡 Back Home</a></p>
+    <p>🌸 <a href="index.html" title="Return to Home">Back to Home</a></p>
+    <p>&copy; <span id="year"></span> Orchid Initiative. All rights reserved.</p>
   </footer>
 
+  <!-- Scripts -->
   <script src="gallery.js"></script>
-
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

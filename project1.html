@@ -2,37 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Orchard Farms Project</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  
-<a href="projects.html" class="home-button" title="Back to projects">
-  🏡 Back to Projects
-</a>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orchard Farms Project | Orchid Initiative</title>
+  <meta name="description" content="The Orchard Farms Project by Orchid Initiative establishes sustainable orchards in public institutions to promote nutrition, food security, and environmental awareness." />
 
-  <header>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Back to Projects -->
+  <a href="projects.html" class="home-button" title="Back to projects">
+    🏡 Back to Projects
+  </a>
+
+  <!-- Header -->
+  <header class="hero-banner">
+    <div class="overlay"></div>
     <h1>🌱 Orchard Farms in Public Institutions</h1>
+    <p>Planting the seeds of sustainability across schools and communities.</p>
   </header>
 
+  <!-- Main Content -->
   <main>
-    <p>This project aims to establish orchard farms across schools, hospitals, and local government grounds to promote food security, nutrition, and environmental awareness.</p>
-    <p>We collaborate with Busia District authorities and train youth in sustainable agriculture.</p>
-    <a href="donate.html"><button>Donate to This Project</button></a>
+    <section>
+      <p>
+        The <strong>Orchard Farms Project</strong> is a core initiative of the Orchid Initiative designed to establish 
+        orchards in schools, hospitals, and local government compounds across Busia District. 
+        Through this, we aim to promote <strong>food security, nutrition, and environmental awareness</strong>.
+      </p>
+
+      <p>
+        Working hand-in-hand with Busia District authorities, this project trains youth and women in sustainable 
+        agriculture, orchard management, and fruit tree propagation.
+      </p>
+
+      <a href="donate.html">
+        <button>🌿 Donate to This Project</button>
+      </a>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <h2>Project Gallery</h2>
+      <div class="gallery-container">
+        <img src="images/img11.jpg" alt="Students planting fruit trees at a local school" loading="lazy">
+        <img src="images/img14.jpg" alt="Community environmental workshop" loading="lazy">
+        <img src="images/img4.jpg" alt="Community orchard gathering and awareness event" loading="lazy">
+      </div>
+    </section>
   </main>
-   <!-- Gallery -->
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-container">
-      <img src="images/img11.jpg" alt="Orchard planting">
-      <img src="images/img14.jpg" alt="Environmental workshop">
-      <img src="images/img4.jpg" alt="Community gathering">
-    </div>
-  </section>
 
-
+  <!-- Footer -->
   <footer>
-    <p><a href="index.html">← Back to Home</a></p>
+    <p>🌸 <a href="index.html">Back to Home</a></p>
+    <p>&copy; <span id="year"></span> Orchid Initiative. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Update footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

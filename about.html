@@ -3,48 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us — Orchid Initiative</title>
+  <title>About Us | Orchid Initiative</title>
+  <meta name="description" content="Learn more about Orchid Initiative — a community-based organization in Busia, Uganda, empowering communities through orchard farming, environmental education, and women’s leadership." />
+
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
   <!-- Back Home Button -->
-<a href="index.html" class="home-button" title="Back to Home">
-  🏡 Back Home
-</a>
+  <a href="index.html" class="home-button" title="Back to Home">
+    🏡 Back Home
+  </a>
 
-  <header>
+  <!-- Hero Header -->
+  <header class="hero-banner">
+    <div class="overlay"></div>
     <h1>🌸 About Orchid Initiative</h1>
-    <p>Our roots run deep in community and conservation.</p>
+    <p>Rooted in community. Growing for the planet.</p>
   </header>
 
+  <!-- Main Content -->
   <main>
-    <section>
+    <section class="about-section">
       <h2>Our Beginning</h2>
-      <p>Founded in 2008 in Busia District, Uganda, Orchid Initiative began with a simple mission: use the power of plants and education to transform lives. What started as a small orchard project is now a flourishing network supporting food security, reforestation, and women’s empowerment.</p>
+      <p>
+        Founded in <strong>2008</strong> in Busia District, Uganda, Orchid Initiative began with a simple mission:
+        to harness the power of plants and education to transform lives.  
+        What started as a small community orchard has blossomed into a thriving movement
+        for environmental restoration, food security, and women’s empowerment.
+      </p>
     </section>
 
-    <section>
+    <section class="about-section">
       <h2>Our Vision</h2>
-      <p>We believe that nature and community thrive together. Our goal is to build resilient ecosystems, reduce poverty, and create green jobs—especially for youth and women in rural areas.</p>
+      <p>
+        We believe that nature and community thrive together.  
+        Our vision is to create a future where every household and school nurtures its own orchard,
+        promoting <strong>self-reliance, sustainability, and resilience</strong>.
+      </p>
     </section>
 
-    <section>
+    <section class="about-section">
       <h2>Our Team</h2>
-      <p>Led by passionate volunteers and agricultural experts, our team includes educators, nursery technicians, and district community officers who work side-by-side with local leaders.</p>
+      <p>
+        Orchid Initiative is led by passionate volunteers and agricultural experts — including educators,
+        nursery technicians, and district community officers — who work side-by-side with local leaders
+        to inspire sustainable change.
+      </p>
     </section>
 
-    <section>
+    <section class="about-section">
       <h2>Why Orchids?</h2>
-      <p>Orchids symbolize beauty, diversity, and endurance—values we want to cultivate through every farm, classroom, and family we reach.</p>
+      <p>
+        Orchids symbolize <strong>beauty, diversity, and endurance</strong> — the very principles we strive to cultivate in every
+        farm, classroom, and family we reach. Just like an orchid, our initiative grows stronger with care, collaboration, and time.
+      </p>
     </section>
 
-    <p><a href="index.html">← Back to Home</a></p>
+    <section class="about-section">
+      <h2>Our Values</h2>
+      <ul>
+        <li>🌿 Sustainability — protecting our environment for future generations</li>
+        <li>🤝 Empowerment — building confidence and opportunity within communities</li>
+        <li>📚 Education — fostering lifelong learning through agriculture and conservation</li>
+        <li>💗 Inclusivity — ensuring women and youth are at the heart of development</li>
+      </ul>
+    </section>
+
+    <div class="about-cta">
+      <a href="projects.html"><button>🌱 Explore Our Projects</button></a>
+    </div>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>📧 Email: goinetug@gmail.com</p>
+    <p>📧 Email: <a href="mailto:goinetug@gmail.com">goinetug@gmail.com</a></p>
     <p>📍 Busia District, Uganda</p>
+    <p>&copy; <span id="year"></span> Orchid Initiative. All rights reserved.</p>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
