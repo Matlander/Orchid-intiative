@@ -15,7 +15,7 @@
   <header class="hero-banner">
     <div class="overlay"></div>
     <h1>🤝 Support Orchid Initiative</h1>
-    <p>Be part of the change — your support plants seeds of hope and sustainability.</p>
+    <p>Your support helps plant trees, train women farmers, and build resilient communities.</p>
   </header>
 
   <main>
@@ -32,26 +32,48 @@
 
       <h2>Ways to Donate</h2>
       <ul>
-        <li><strong>📱 Mobile Money (MTN/Airtel):</strong> +256780240187</li>
+        <li><strong>📱 Mobile Money (MTN/Airtel):</strong> +256788258931</li>
         <li><strong>🏦 Bank Transfer:</strong> Global Orchard Initiative — Equity Bank — Acc. #1008101104024</li>
       </ul>
+      <p class="donation-info">
+  100% of donations directly support orchard planting, training programs, and community empowerment initiatives.
+</p>
     </section>
 
-    <section class="volunteer-form">
-      <h2>Volunteer With Us</h2>
-      <p>Want to dig in and grow change with us? We’d love to hear from you!</p>
+   <section class="volunteer-form">
+  <h2>Volunteer With Us</h2>
+  <p>
+    Join us in planting trees, training communities, and building sustainable futures across Uganda.
+  </p>
 
-      <form action="https://formsubmit.co/ayebaremat@gmail.com" method="POST">
-        <input type="text" name="name" placeholder="Your Full Name" required />
-        <input type="email" name="email" placeholder="Your Email Address" required />
-        <textarea name="message" placeholder="Why you'd like to volunteer..." rows="5" required></textarea>
+  <form action="https://formsubmit.co/ayebaremat@gmail.com" method="POST">
 
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html">
+    <!-- FormSubmit Hidden Settings -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New Volunteer Application">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="thankyou.html">
 
-        <button type="submit">🌸 Submit Application</button>
-      </form>
-    </section>
+    <!-- Visible Fields -->
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Why would you like to volunteer?</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+
+    <button type="submit">Submit Application</button>
+
+  </form>
+</section>
   </main>
   <script src="components.js"></script>
   <script>

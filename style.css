@@ -112,8 +112,8 @@ header.hero-banner p {
   width: 70%;
   height: 100%;
   background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
   transition: right 0.4s ease;
   z-index: 998;
   padding-top: 5rem;
@@ -565,4 +565,50 @@ button:hover {
 
 .project-card:hover img {
   transform: scale(1.08);
+}
+.donate-options ul {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.donate-options li {
+  background: rgba(255,255,255,0.95);
+  padding: 1.2rem;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donate-options li:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+.donate-options strong {
+  font-size: 1.3rem;
+  color: #1b5e20;
+}
+.volunteer-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.volunteer-form input,
+.volunteer-form textarea {
+  padding: 0.9rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.volunteer-form input:focus,
+.volunteer-form textarea:focus {
+  border-color: #2e8b57;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(46,139,87,0.2);
 }
