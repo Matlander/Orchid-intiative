@@ -1,89 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Donate & Volunteer | Orchid Initiative</title>
-  <meta name="description" content="Support the Orchid Initiative through donations or volunteering. Help us empower communities, plant fruit trees, and promote environmental sustainability across Uganda." />
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find ways to support, volunteer, or partner with Orchid Initiative in Busia, Uganda.">
+  <title>Support our work | Orchid Initiative</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div id="back-container"></div>
-  <header class="hero-banner">
-    <div class="overlay"></div>
-    <h1>🤝 Support Orchid Initiative</h1>
-    <p>Your support helps plant trees, train women farmers, and build resilient communities.</p>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="shell nav-row">
+      <a class="brand" href="index.html" aria-label="Orchid Initiative home">Orchid <span>Initiative</span></a>
+      <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">Menu</button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="index.html#impact">Our work</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="about.html">About</a><a class="nav-support" href="donate.html" aria-current="page">Support us</a>
+      </nav>
+    </div>
   </header>
-
-  <main>
-    <section class="donate-options">
-      <h2>How You Can Help</h2>
-      <ul>
-        <li>🌳 <strong>$5</strong> — Plant a fruit tree</li>
-        <li>👩‍🌾 <strong>$25</strong> — Train a youth farmer</li>
-        <li>🌾 <strong>$50</strong> — Support a community orchard</li>
-      </ul>
-
-      <p>We accept <strong>Mobile Money</strong>, <strong>PayPal</strong>, and <strong>Direct Bank Transfers</strong>.  
-      Every contribution — no matter the size — helps grow lasting change.</p>
-
-      <h2>Ways to Donate</h2>
-      <ul>
-        <li><strong>📱 Mobile Money (MTN/Airtel):</strong> +256788258931</li>
-        <li><strong>🏦 Bank Transfer:</strong> Global Orchard Initiative — Equity Bank — Acc. #1008101104024</li>
-      </ul>
-      <p class="donation-info">
-  100% of donations directly support orchard planting, training programs, and community empowerment initiatives.
-</p>
+  <main id="main-content">
+    <header class="hero-banner">
+      <p class="eyebrow">Get involved</p>
+      <h1>Help good things grow.</h1>
+      <p>Support community orchard work in Busia, or share your time and skills with Orchid Initiative.</p>
+    </header>
+    <section class="donate-options" aria-labelledby="support-title">
+      <p class="eyebrow">Give or partner</p>
+      <h2 id="support-title">Start with a conversation.</h2>
+      <p class="support-intro">We would be glad to tell you about current projects and confirm the available ways to contribute. Contact us before sending a donation so you have the latest details.</p>
+      <div class="support-paths">
+        <article>
+          <h3>Support a project</h3>
+          <p>Ask about orchard planting, school activities, or community training.</p>
+          <a class="button button-primary" href="https://wa.me/256780240187" target="_blank" rel="noopener noreferrer">Message us on WhatsApp</a>
+        </article>
+        <article>
+          <h3>Explore a partnership</h3>
+          <p>Tell us about your school, group, or organization and what you hope to do together.</p>
+          <a class="button button-primary" href="mailto:goinetug@gmail.com?subject=Partnership%20with%20Orchid%20Initiative">Email Orchid Initiative</a>
+        </article>
+      </div>
+      <p class="donation-note">WhatsApp: <a href="https://wa.me/256780240187" target="_blank" rel="noopener noreferrer">0780240187</a> · Email: <a href="mailto:goinetug@gmail.com">goinetug@gmail.com</a></p>
     </section>
-
-   <section class="volunteer-form">
-  <h2>Volunteer With Us</h2>
-  <p>
-    Join us in planting trees, training communities, and building sustainable futures across Uganda.
-  </p>
-
-  <form action="https://formsubmit.co/ayebaremat@gmail.com" method="POST">
-
-    <!-- FormSubmit Hidden Settings -->
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_subject" value="New Volunteer Application">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_next" value="thankyou.html">
-
-    <!-- Visible Fields -->
-    <div class="form-group">
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-
-    <div class="form-group">
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-
-    <div class="form-group">
-      <label for="message">Why would you like to volunteer?</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-    </div>
-
-    <button type="submit">Submit Application</button>
-
-  </form>
-</section>
+    <section class="volunteer-form" id="volunteer" aria-labelledby="volunteer-title">
+      <p class="eyebrow">Share your time</p>
+      <h2 id="volunteer-title">Volunteer with us.</h2>
+      <p>Tell us a little about yourself and how you would like to help. We will follow up about opportunities.</p>
+      <form action="https://formsubmit.co/ayebaremat@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Volunteer Application">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" id="volunteer-next">
+        <div class="form-group"><label for="name">Full name</label><input type="text" id="name" name="name" autocomplete="name" required></div>
+        <div class="form-group"><label for="email">Email address</label><input type="email" id="email" name="email" autocomplete="email" required></div>
+        <div class="form-group"><label for="message">How would you like to help?</label><textarea id="message" name="message" rows="5" required></textarea></div>
+        <button type="submit">Send volunteer application</button>
+      </form>
+    </section>
   </main>
   <script src="components.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      document.getElementById("back-container").appendChild(
-        createBackButton("← Back to Home", "index.html")
-      );
-
-      insertFooter();
-    });
-  </script>
+  <script src="scripts.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", insertFooter);</script>
 </body>
 </html>

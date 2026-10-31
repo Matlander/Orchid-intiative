@@ -1,15 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Thank You</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thank you | Orchid Initiative</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section>
-    <h2>Thank You!</h2>
-    <p>Your volunteer application has been received.</p>
-    <a href="index.html"><button>Back to Home</button></a>
-  </section>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header"><div class="shell nav-row">
+    <a class="brand" href="index.html" aria-label="Orchid Initiative home">Orchid <span>Initiative</span></a>
+    <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">Menu</button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="index.html#impact">Our work</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="about.html">About</a><a class="nav-support" href="donate.html">Support us</a>
+    </nav>
+  </div></header>
+  <main class="shell confirmation" id="main-content">
+    <p class="eyebrow">Volunteer with us</p>
+    <h1>Thank you for reaching out.</h1>
+    <p>We appreciate your interest in helping Orchid Initiative.</p>
+    <a class="button button-primary" href="index.html">Back to home</a>
+  </main>
+  <script src="components.js"></script><script src="scripts.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", insertFooter);</script>
 </body>
 </html>
