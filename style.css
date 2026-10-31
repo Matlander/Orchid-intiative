@@ -54,9 +54,8 @@ h3 { font-size: 1.3rem; }
 .text-link:hover { color: #785390; }
 .text-link span { font-size: 1.15em; }
 
-.hero { display: grid; grid-template-columns: minmax(0, .98fr) minmax(0, 1.02fr); width: min(100% - 3rem, 1300px); margin-block: clamp(1.25rem, 3vw, 3rem) clamp(3rem, 6vw, 5rem); padding: 0; overflow: hidden; background: var(--deep-forest); border-radius: 1.4rem; box-shadow: 0 22px 55px rgba(16, 44, 37, .16); }
-.hero-copy { position: relative; z-index: 0; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: clamp(2.5rem, 5vw, 5rem); isolation: isolate; }
-.hero-copy::before { position: absolute; z-index: -1; inset: 0; content: ""; background: radial-gradient(circle at 80% 16%, rgba(126, 156, 103, .26), transparent 40%), linear-gradient(135deg, #102c25, #183e33); }
+.hero { display: grid; grid-template-columns: minmax(0, .98fr) minmax(0, 1.02fr); width: min(100% - 3rem, 1300px); margin-block: clamp(1.25rem, 3vw, 3rem) clamp(3rem, 6vw, 5rem); padding: 0; overflow: hidden; background: var(--deep-forest) url('images/orchid-fruit-harvest.jpg') center / cover; border: 1px solid rgba(255, 255, 255, .45); border-radius: 1.4rem; box-shadow: 0 22px 55px rgba(16, 44, 37, .16); }
+.hero-copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: clamp(2.5rem, 5vw, 5rem); background: linear-gradient(135deg, rgba(9, 31, 23, .78), rgba(24, 66, 45, .64)); border-right: 1px solid rgba(255, 255, 255, .32); -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px); }
 .hero-copy .eyebrow { color: #d8d6aa; }
 .hero-copy h1 { max-width: 700px; color: var(--paper); margin-bottom: 1.5rem; font-size: clamp(3.1rem, 4.5vw, 5.2rem); }
 .hero-copy h1 em { display: block; color: #e4c598; font-style: normal; }
@@ -225,7 +224,7 @@ h3 { font-size: 1.3rem; }
   .primary-nav a { display: block; padding: .65rem 1rem; font-size: 1rem; }
   .primary-nav .nav-support { width: fit-content; margin: .5rem 1rem; }
   .hero { grid-template-columns: 1fr; width: min(100% - 2rem, 1200px); margin-block: 1rem 3rem; }
-  .hero-copy { padding: 3rem 2rem; }
+  .hero-copy { padding: 3rem 2rem; border-right: 0; border-bottom: 1px solid rgba(255, 255, 255, .32); }
   .hero-copy h1 { font-size: clamp(2.9rem, 10vw, 4.4rem); }
   .hero-slide img { height: min(105vw, 520px); min-height: 330px; }
   .section-heading { display: block; }
