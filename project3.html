@@ -1,70 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Women Empowerment & Healthcare Development | Orchid Initiative</title>
-  <meta name="description" content="The Women Empowerment & Healthcare Development project by Orchid Initiative strengthens women’s participation in agriculture, healthcare awareness, and sustainable community leadership in Uganda." />
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn about Orchid Initiative's work connecting agricultural learning with nutrition and community wellbeing in Busia, Uganda.">
+  <title>Women and community wellbeing | Orchid Initiative</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div id="back-container"></div>
-
-  <header class="hero-banner">
-    <div class="overlay"></div>
-    <h1>👩‍🌾 Women Empowerment & Healthcare Development</h1>
-    <p>Building healthier communities through women-led initiatives and sustainable practices.</p>
-  </header>
-
-  <main>
-    <section>
-      <p>
-        The <strong>Women Empowerment & Healthcare Development Project</strong> is dedicated to supporting women in Busia District 
-        through agriculture, community healthcare, and entrepreneurship. By integrating orchard farming with 
-        health education, we aim to improve both livelihoods and wellness outcomes for families.
-      </p>
-
-      <p>
-        Our teams collaborate with healthcare professionals and local leaders to create platforms 
-        where women can access knowledge, tools, and training in nutrition, environmental care, and 
-        small-scale agribusiness — ensuring long-term community resilience.
-      </p>
-
-      <a href="donate.html">
-        <button>💗 Support This Project</button>
-      </a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header"><div class="shell nav-row">
+    <a class="brand" href="index.html" aria-label="Orchid Initiative home">Orchid <span>Initiative</span></a>
+    <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">Menu</button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="index.html#impact">Our work</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="about.html">About</a><a class="nav-support" href="donate.html">Support us</a>
+    </nav>
+  </div></header>
+  <main id="main-content">
+    <header class="hero-banner"><p class="eyebrow">Women & wellbeing</p><h1>Women and community wellbeing</h1><p>Connecting agricultural learning with nutrition, health awareness, and opportunities for women.</p></header>
+    <section class="content-panel" aria-label="Project overview">
+      <p>This initiative brings orchard farming together with community conversations about nutrition, wellbeing, and livelihoods. It creates opportunities for women and families to take part in practical learning.</p>
+      <p>Orchid Initiative works with local leaders and community members to make these activities useful to the people involved.</p>
+      <a class="button button-primary" href="donate.html">Support this work</a>
     </section>
-
-    <section id="gallery">
-      <h2>Project Gallery</h2>
+    <section class="content-panel" aria-labelledby="gallery-title">
+      <h2 id="gallery-title">Project photos</h2>
       <div class="gallery-container">
-        <img src="images/img6.jpg" alt="Women receiving agricultural training in Busia" loading="lazy">
-        <img src="images/img8.jpg" alt="Healthcare and nutrition awareness workshop" loading="lazy">
-        <img src="images/img7.jpg" alt="Community members celebrating orchard project success" loading="lazy">
+        <img src="images/img6.jpg" alt="Community members gathered with fruit tree seedlings outside a health centre" loading="lazy">
+        <img src="images/img7.jpg" alt="People gathered outside a health centre" loading="lazy">
+        <img src="images/img12.jpg" alt="People taking part in a meeting around tables" loading="lazy">
       </div>
     </section>
-
-    <section id="impact">
-      <h2>Project Impact</h2>
-      <ul>
-        <li>👩‍⚕️ 300+ women trained in health and agricultural sustainability</li>
-        <li>🏥 10 community health and nutrition outreach programs conducted</li>
-        <li>🌿 Increased household income through women-led fruit farming</li>
-      </ul>
-    </section>
   </main>
-  <script src="components.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      document.getElementById("back-container").appendChild(
-        createBackButton("← Back to Projects", "projects.html")
-      );
-
-      insertFooter();
-    });
-  </script>
+  <script src="components.js"></script><script src="scripts.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", insertFooter);</script>
 </body>
 </html>

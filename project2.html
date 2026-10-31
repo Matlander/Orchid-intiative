@@ -1,75 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Community Orchard Expansion | Orchid Initiative</title>
-  <meta name="description" content="The Community Orchard Expansion project by Orchid Initiative promotes afforestation and fruit tree planting across Ugandan communities to enhance food security and environmental restoration." />
-
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn about Orchid Initiative's community fruit tree planting and orchard care work in Busia, Uganda.">
+  <title>Community orchard expansion | Orchid Initiative</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div id="back-container"></div>
-
-  <header class="hero-banner">
-    <div class="overlay"></div>
-    <h1>🌳 Community Orchard Expansion</h1>
-    <p>Growing trees, empowering communities, restoring balance.</p>
-  </header>
-
-  <main>
-    <section>
-      <p>
-        The <strong>Community Orchard Expansion Project</strong> focuses on establishing and maintaining 
-        fruit orchards in rural and peri-urban areas of Busia and surrounding districts. By working 
-        directly with local communities, we help create a sustainable source of food, income, and environmental resilience.
-      </p>
-
-      <p>
-        Through hands-on training in orchard management and fruit tree care, 
-        we empower families, schools, and youth groups to actively participate in reforestation 
-        and agricultural innovation — nurturing both the land and livelihoods.
-      </p>
-
-      <a href="donate.html">
-        <button>🌿 Support This Project</button>
-      </a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header"><div class="shell nav-row">
+    <a class="brand" href="index.html" aria-label="Orchid Initiative home">Orchid <span>Initiative</span></a>
+    <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">Menu</button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="index.html#impact">Our work</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="about.html">About</a><a class="nav-support" href="donate.html">Support us</a>
+    </nav>
+  </div></header>
+  <main id="main-content">
+    <header class="hero-banner"><p class="eyebrow">Community planting</p><h1>Community orchard expansion</h1><p>Growing fruit trees alongside communities and sharing the skills needed to care for them.</p></header>
+    <section class="content-panel" aria-label="Project overview">
+      <p>Community orchard work brings local people together around planting, tree care, and shared learning. The aim is to support access to fruit while strengthening local knowledge and environmental care.</p>
+      <p>Activities include hands-on planting and conversations about maintaining young trees as they grow.</p>
+      <a class="button button-primary" href="donate.html">Support this work</a>
     </section>
-
-    <section id="gallery">
-      <h2>Project Gallery</h2>
+    <section class="content-panel" aria-labelledby="gallery-title">
+      <h2 id="gallery-title">Project photos</h2>
       <div class="gallery-container">
-        <img src="images/img1.jpg" alt="Community members planting fruit trees together" loading="lazy">
-        <img src="images/img2.jpg" alt="Environmental workshop training participants" loading="lazy">
-        <img src="images/img4.jpg" alt="Local leaders participating in a community tree planting day" loading="lazy">
+        <img src="images/img4.jpg" alt="A young person preparing the ground for planting" loading="lazy">
+        <img src="images/img11.jpg" alt="Two people holding young tree seedlings" loading="lazy">
+        <img src="images/img16.jpg" alt="Community members meeting outdoors under a tree" loading="lazy">
       </div>
     </section>
-
-
-    <section id="impact">
-      <h2>Project Impact</h2>
-      <ul>
-        <li>🌿 5,000+ fruit trees planted across communities</li>
-        <li>👩‍🌾 250 youth trained in orchard management</li>
-        <li>🏘️ 20 community orchards established and maintained</li>
-      </ul>
-    </section>
   </main>
-
-  <script src="components.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-
-      document.getElementById("back-container").appendChild(
-        createBackButton("← Back to Projects", "projects.html")
-      );
-
-  
-      insertFooter();
-    });
-  </script>
+  <script src="components.js"></script><script src="scripts.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", insertFooter);</script>
 </body>
 </html>

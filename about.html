@@ -1,80 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us | Orchid Initiative</title>
-  <meta name="description" content="Learn more about Orchid Initiative — a community-based organization in Busia, Uganda, empowering communities through orchard farming, environmental education, and women’s leadership." />
-
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn about Orchid Initiative's community-focused orchard and agricultural work in Busia, Uganda.">
+  <title>About us | Orchid Initiative</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header class="hero-banner">
-    <div class="overlay"></div>
-    <h1>🌸 About Orchid Initiative</h1>
-    <p>Rooted in community. Growing for the planet.</p>
-  </header>
-
-  <main>
-    <section class="about-section">
-      <h2>Our Beginning</h2>
-      <p>
-        Founded in <strong>2008</strong> in Busia District, Uganda, Orchid Initiative began with a simple mission:
-        to harness the power of plants and education to transform lives.  
-        What started as a small community orchard has blossomed into a thriving movement
-        for environmental restoration, food security, and women’s empowerment.
-      </p>
-    </section>
-
-    <section class="about-section">
-      <h2>Our Vision</h2>
-      <p>
-        We believe that nature and community thrive together.  
-        Our vision is to create a future where every household and school nurtures its own orchard,
-        promoting <strong>self-reliance, sustainability, and resilience</strong>.
-      </p>
-    </section>
-
-    <section class="about-section">
-      <h2>Our Team</h2>
-      <p>
-        Orchid Initiative is led by passionate volunteers and agricultural experts — including educators,
-        nursery technicians, and district community officers — who work side-by-side with local leaders
-        to inspire sustainable change.
-      </p>
-    </section>
-
-    <section class="about-section">
-      <h2>Why Orchids?</h2>
-      <p>
-        Orchids symbolize <strong>beauty, diversity, and endurance</strong> — the very principles we strive to cultivate in every
-        farm, classroom, and family we reach. Just like an orchid, our initiative grows stronger with care, collaboration, and time.
-      </p>
-    </section>
-
-    <section class="about-section">
-      <h2>Our Values</h2>
-      <ul>
-        <li>🌿 Sustainability — protecting our environment for future generations</li>
-        <li>🤝 Empowerment — building confidence and opportunity within communities</li>
-        <li>📚 Education — fostering lifelong learning through agriculture and conservation</li>
-        <li>💗 Inclusivity — ensuring women and youth are at the heart of development</li>
-      </ul>
-    </section>
-
-    <div class="about-cta">
-      <a href="projects.html"><button>🌱 Explore Our Projects</button></a>
-    </div>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header"><div class="shell nav-row">
+    <a class="brand" href="index.html" aria-label="Orchid Initiative home">Orchid <span>Initiative</span></a>
+    <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">Menu</button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="index.html#impact">Our work</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="about.html" aria-current="page">About</a><a class="nav-support" href="donate.html">Support us</a>
+    </nav>
+  </div></header>
+  <main id="main-content">
+    <header class="hero-banner"><p class="eyebrow">Our story</p><h1>Rooted in community.</h1><p>Orchid Initiative works with people in Busia District to grow fruit trees, share skills, and care for the places they call home.</p></header>
+    <section class="about-section"><h2>Why we work</h2><p>Our work brings orchard farming, environmental care, and practical learning together. We believe communities should be at the centre of decisions about their land and livelihoods.</p></section>
+    <section class="about-section"><h2>How we work</h2><p>We collaborate with schools, local leaders, women, young people, and other community members on planting and training activities. Projects are shaped by the needs of the people involved.</p></section>
+    <section class="about-section"><h2>What matters to us</h2><p>Care for the environment, useful education, and opportunities for wider participation guide the work. We want every project to be practical and meaningful to its community.</p></section>
+    <div class="about-cta"><a class="button button-primary" href="projects.html">Explore our projects</a></div>
   </main>
-
-  <script src="components.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      insertFooter();
-    });
-  </script>
+  <script src="components.js"></script><script src="scripts.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", insertFooter);</script>
 </body>
 </html>

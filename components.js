@@ -1,37 +1,14 @@
+function insertFooter() {
+  if (document.querySelector(".site-footer")) return;
 
-function createBackButton(label = "← Back to Home", url = "index.html") {
-  const button = document.createElement("button");
-  button.textContent = label;
-  button.className = "back-home-btn";
-  button.addEventListener("click", () => {
-    window.location.href = url;
-  });
-  return button;
-}
-
-function createFooter() {
   const footer = document.createElement("footer");
   footer.className = "site-footer";
-  const year = new Date().getFullYear();
-
   footer.innerHTML = `
-    <p>📧 Email: <a href="mailto:goinetug@gmail.com">goinetug@gmail.com</a></p>
-    <p>📍 Buyiye Village, Busikho Parish, Masinya Subcounty, Busia, Uganda</p>
-    <p>Connect with us:</p>
-    <div class="social-links">
-      <a href="https://www.facebook.com/share/p/1FnyU5En1f/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
-      <a href="https://twitter.com/goinetug" target="_blank" aria-label="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
-      <a href="https://instagram.com/goinetug" target="_blank" aria-label="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+    <div class="shell footer-grid">
+      <div><p class="footer-brand">Orchid Initiative</p><p>Growing opportunity with communities in Busia, Uganda.</p></div>
+      <div><h2>Explore</h2><a href="projects.html">Projects</a><a href="index.html#future-plans">Future plans</a><a href="index.html#tap-to-grow">Tap to grow</a><a href="gallery.html">Gallery</a><a href="about.html">About us</a><a href="donate.html">Support us</a><h2 class="related-title">Related organization</h2><a href="https://www.reachone-touchone.org/ug/programmes" target="_blank" rel="noopener noreferrer">Reach One Touch One Ministries (ROTOM)</a></div>
+      <div><h2>Contact</h2><a href="mailto:goinetug@gmail.com">goinetug@gmail.com</a><a href="https://wa.me/256780240187" target="_blank" rel="noopener noreferrer">WhatsApp: 0780240187</a><p>Buyiye Village, Busikho Parish, Masinya Subcounty, Busia, Uganda</p><div class="footer-social"><a href="https://www.facebook.com/share/p/1FnyU5En1f/" target="_blank" rel="noopener noreferrer">Facebook</a><a href="https://instagram.com/goinetug" target="_blank" rel="noopener noreferrer">Instagram</a></div></div>
     </div>
-    <p>© ${year} Orchid Initiative. All rights reserved.</p>
-  `;
-  return footer;
+    <div class="shell footer-bottom">© ${new Date().getFullYear()} Orchid Initiative</div>`;
+  document.body.appendChild(footer);
 }
-
-function insertFooter() {
-  if (!document.querySelector(".site-footer")) {
-    document.body.appendChild(createFooter());
-  }
-}
-window.createBackButton = createBackButton;
-window.insertFooter = insertFooter;

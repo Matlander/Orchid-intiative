@@ -1,96 +1,249 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Orchid Initiative | Sustainable Orchard Farming in Busia, Uganda</title>
-  <meta name="description" content="The Orchid Initiative is a community-based organization in Busia, Uganda, empowering communities through orchard farming, afforestation, and sustainable agriculture." />
-  <link rel="icon" href="images/favicon.ico" />
-
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Orchid Initiative works with communities in Busia, Uganda through fruit tree planting, agricultural skills, and opportunities for women and young people.">
+  <title>Orchid Initiative | Growing opportunity in Busia, Uganda</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-  <a href="#mission" class="skip-link">Skip to content</a>
-
-  
-  <header class="hero-banner">
-    <div class="overlay"></div>
-    <img src="images/logo.jpg" alt="Orchid Initiative logo" class="logo" />
-    <h1>🌸 Orchid Initiative</h1>
-    <p>Conserve. Enhance. Empower.</p>
-    <button id="menu-toggle" aria-label="Toggle navigation menu">
-      <i class="fas fa-bars"></i>
-    </button>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="shell nav-row">
+      <a class="brand" href="index.html" aria-label="Orchid Initiative home">Orchid <span>Initiative</span></a>
+      <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">Menu</button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="#impact">Our work</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a class="nav-support" href="donate.html">Support us</a>
+      </nav>
+    </div>
   </header>
 
-  <nav id="sliding-menu" aria-label="Main navigation">
-    <ul>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="donate.html">Donate</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
-
-
-  <main>
-    <section id="mission">
-  <h2>Our Mission</h2>
-  <p>
-    Orchid Initiative empowers communities in Busia District through sustainable orchard farming,
-    environmental conservation, and women-led agricultural innovation.
-  </p>
-
-  <a href="about.html">
-    <button>Learn More About Us</button>
-  </a>
-</section>
-    <section id="impact">
-      <h2>Impact at a Glance</h2>
-      <ul>
-        <li>🌿 3,000+ trees planted</li>
-        <li>👩‍🌾 400+ women trained</li>
-        <li>🏫 12 schools supported</li>
-      </ul>
+  <main id="main-content">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Community-led change · Busia, Uganda</p>
+        <h1 id="hero-title">Growing more than trees. <em>Growing opportunity.</em></h1>
+        <p class="hero-lede">We work alongside communities to grow fruit trees, share practical agricultural skills, and create opportunities for women and young people.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="donate.html">Support our work</a>
+          <a class="text-link" href="#impact">Explore our work <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="images/img5.jpg" alt="Students and adults holding young fruit trees at a school in Busia District" fetchpriority="high">
+        <figcaption>Growing with school communities in Busia District</figcaption>
+      </figure>
     </section>
 
-  <section id="cta">
-  <h2>Join Us in Growing Sustainable Futures</h2>
-  <p>
-    Your support helps plant trees, train women farmers, and build resilient communities across Uganda.
-  </p>
-  <a href="donate.html">
-    <button>Support Our Work</button>
-  </a>
-</section>
+    <section class="intro-band" id="impact" aria-labelledby="impact-title">
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Our work at a glance</p>
+            <h2 id="impact-title">Rooted in the places we call home.</h2>
+          </div>
+          <p>Our projects bring environmental care together with practical learning and community participation.</p>
+        </div>
+        <div class="focus-grid">
+          <article class="focus-card">
+            <span class="focus-number">01</span>
+            <h3>Fruit trees</h3>
+            <p>Supporting fruit tree planting and orchard care in schools and community spaces.</p>
+          </article>
+          <article class="focus-card">
+            <span class="focus-number">02</span>
+            <h3>Skills for livelihoods</h3>
+            <p>Sharing agricultural knowledge with women, young people, and local groups.</p>
+          </article>
+          <article class="focus-card">
+            <span class="focus-number">03</span>
+            <h3>Community partnerships</h3>
+            <p>Working with schools, local leaders, and families to sustain the work together.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <section class="section shell" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Featured projects</p>
+          <h2 id="projects-title">See where the work happens.</h2>
+        </div>
+        <a class="text-link" href="projects.html">View all projects <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <a class="project-image" href="project1.html"><img src="images/img5.jpg" alt="A school community holds young fruit trees" loading="lazy"></a>
+          <div class="project-card-copy">
+            <p class="card-kicker">Schools · Busia District</p>
+            <h3>Orchards in public institutions</h3>
+            <p>Planting and caring for fruit trees with schools and other public institutions.</p>
+            <a class="text-link" href="project1.html">Explore project <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="project-card">
+          <a class="project-image" href="project2.html"><img src="images/img4.jpg" alt="A young person prepares the ground for tree planting" loading="lazy"></a>
+          <div class="project-card-copy">
+            <p class="card-kicker">Communities · Busia District</p>
+            <h3>Community orchard expansion</h3>
+            <p>Working with local communities to establish and care for fruit trees.</p>
+            <a class="text-link" href="project2.html">Explore project <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="project-card">
+          <a class="project-image" href="project3.html"><img src="images/img6.jpg" alt="Community members gathered with fruit tree seedlings outside a health centre" loading="lazy"></a>
+          <div class="project-card-copy">
+            <p class="card-kicker">Women &amp; wellbeing · Busia District</p>
+            <h3>Women and community wellbeing</h3>
+            <p>Connecting agricultural learning with nutrition and community health awareness.</p>
+            <a class="text-link" href="project3.html">Explore project <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell future-plans" id="future-plans" aria-labelledby="future-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Looking ahead</p>
+          <h2 id="future-title">What we hope to grow next.</h2>
+        </div>
+        <p>These are ideas to explore with communities and partners, not funded or scheduled commitments.</p>
+      </div>
+      <div class="future-grid">
+        <article class="future-card">
+          <span class="future-card-number" aria-hidden="true">01</span>
+          <h3>More school orchards</h3>
+          <p>Explore new school planting sites and agree on a care plan with each school before trees go into the ground.</p>
+        </article>
+        <article class="future-card">
+          <span class="future-card-number" aria-hidden="true">02</span>
+          <h3>Practical tree care skills</h3>
+          <p>Develop hands-on sessions on seedlings, watering, and orchard care with women, young people, and local caretakers.</p>
+        </article>
+        <article class="future-card">
+          <span class="future-card-number" aria-hidden="true">03</span>
+          <h3>Updates from the field</h3>
+          <p>Record planting dates, places, species, and follow-up visits so communities and supporters can see how projects progress.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="field-story" aria-labelledby="story-title">
+      <div class="shell field-story-grid">
+        <div class="field-story-photos">
+          <img src="images/img16.jpg" alt="Community members meeting outdoors under a tree" loading="lazy">
+          <img src="images/img11.jpg" alt="Two people holding young tree seedlings" loading="lazy">
+        </div>
+        <div class="field-story-copy">
+          <p class="eyebrow">From the field</p>
+          <h2 id="story-title">The work is built together.</h2>
+          <p>Planting days, school activities, and community gatherings connect people around a shared goal: healthier landscapes and stronger local opportunities.</p>
+          <a class="text-link" href="gallery.html">See photos from our work <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="grow-section" id="tap-to-grow" aria-labelledby="grow-title">
+      <div class="shell grow-layout">
+        <div class="grow-copy">
+          <p class="eyebrow">Interactive experience</p>
+          <h2 id="grow-title">Tap to grow a tree.</h2>
+          <p>Tap the virtual tree or use the button below. Watch it grow on your screen, one tap at a time.</p>
+        </div>
+        <button class="grow-visual" id="tree-scene" type="button" data-stage="seed" aria-label="Tap to grow the virtual tree" aria-describedby="grow-disclaimer">
+          <svg viewBox="0 0 360 360" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="trunk-gradient" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#865a3d"/><stop offset="1" stop-color="#b27a4e"/></linearGradient>
+              <linearGradient id="leaf-gradient" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9bbd73"/><stop offset="1" stop-color="#4e8057"/></linearGradient>
+            </defs>
+            <ellipse cx="180" cy="286" rx="125" ry="22" fill="#d9c7a8"/>
+            <ellipse cx="180" cy="280" rx="95" ry="13" fill="#b79572" opacity=".55"/>
+            <g class="growth-phase" data-phase="seed">
+              <ellipse cx="180" cy="271" rx="12" ry="7" transform="rotate(-25 180 271)" fill="#9b6546"/>
+              <path d="M179 268q4-4 7-3" fill="none" stroke="#e5c6a0" stroke-width="2" stroke-linecap="round"/>
+            </g>
+            <g class="growth-phase" data-phase="sprout">
+              <path d="M181 276Q176 245 183 218" fill="none" stroke="#5e8c59" stroke-width="7" stroke-linecap="round"/>
+              <ellipse cx="162" cy="236" rx="23" ry="11" transform="rotate(28 162 236)" fill="#78a465"/>
+              <ellipse cx="199" cy="223" rx="23" ry="11" transform="rotate(-26 199 223)" fill="#91b873"/>
+            </g>
+            <g class="growth-phase" data-phase="sapling">
+              <path d="M175 279Q182 245 179 194Q178 169 184 145" fill="none" stroke="url(#trunk-gradient)" stroke-width="11" stroke-linecap="round"/>
+              <path d="M181 222Q158 197 142 193M181 189Q203 171 216 154" fill="none" stroke="#8f6345" stroke-width="6" stroke-linecap="round"/>
+              <ellipse cx="139" cy="188" rx="31" ry="15" transform="rotate(22 139 188)" fill="#7ea966"/>
+              <ellipse cx="217" cy="151" rx="31" ry="15" transform="rotate(-20 217 151)" fill="#91b873"/>
+              <ellipse cx="184" cy="140" rx="28" ry="16" fill="#6e9b62"/>
+            </g>
+            <g class="growth-phase" data-phase="young">
+              <path d="M168 278Q185 236 179 188Q175 152 185 122" fill="none" stroke="url(#trunk-gradient)" stroke-width="18" stroke-linecap="round"/>
+              <path d="M178 209Q151 176 125 170M180 178Q204 150 234 143M184 145Q169 117 155 110" fill="none" stroke="#966644" stroke-width="9" stroke-linecap="round"/>
+              <circle cx="125" cy="153" r="40" fill="#63945b"/>
+              <circle cx="157" cy="122" r="47" fill="#83ab68"/>
+              <circle cx="207" cy="113" r="48" fill="#6c9c61"/>
+              <circle cx="238" cy="148" r="42" fill="#86af6c"/>
+              <circle cx="179" cy="158" r="49" fill="url(#leaf-gradient)"/>
+            </g>
+            <g class="growth-phase" data-phase="grown">
+              <path d="M165 280Q187 234 179 177Q175 139 186 105" fill="none" stroke="url(#trunk-gradient)" stroke-width="23" stroke-linecap="round"/>
+              <path d="M179 207Q148 168 110 159M180 168Q213 134 251 128M183 140Q159 106 144 95" fill="none" stroke="#966644" stroke-width="11" stroke-linecap="round"/>
+              <circle cx="108" cy="144" r="45" fill="#5d9158"/>
+              <circle cx="145" cy="102" r="52" fill="#82ab67"/>
+              <circle cx="199" cy="91" r="56" fill="#6e9d60"/>
+              <circle cx="250" cy="126" r="48" fill="#8caf6d"/>
+              <circle cx="190" cy="148" r="58" fill="url(#leaf-gradient)"/>
+              <circle cx="123" cy="165" r="9" fill="#d69b63"/>
+              <circle cx="225" cy="163" r="9" fill="#d69b63"/>
+              <circle cx="176" cy="108" r="9" fill="#d69b63"/>
+            </g>
+          </svg>
+        </button>
+        <div class="grow-controls">
+          <p class="grow-status" id="grow-status" aria-live="polite">Your virtual seed is ready.</p>
+          <p class="grow-count" id="grow-count">0 of 12 growth taps</p>
+          <progress id="grow-progress" max="12" value="0" aria-label="Virtual tree growth">0 of 12</progress>
+          <div class="grow-actions">
+            <button class="button button-primary" id="grow-button" type="button">Tap to help it grow</button>
+            <button class="grow-reset" id="grow-reset" type="button" hidden>Start again</button>
+          </div>
+          <p class="grow-disclaimer" id="grow-disclaimer">This is a virtual experience. Tapping does not fund or plant a physical tree.</p>
+          <a class="text-link" href="project2.html">See our real orchard work <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell get-involved" aria-labelledby="involved-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Get involved</p>
+          <h2 id="involved-title">There is a place for you here.</h2>
+        </div>
+        <p>Support a project, share your time, or start a conversation about working together.</p>
+      </div>
+      <div class="involvement-grid">
+        <article><h3>Give</h3><p>Help sustain orchard planting and community training.</p><a class="text-link" href="donate.html">Ways to support <span aria-hidden="true">↗</span></a></article>
+        <article><h3>Volunteer</h3><p>Tell us how you would like to contribute your time and skills.</p><a class="text-link" href="donate.html#volunteer">Volunteer with us <span aria-hidden="true">↗</span></a></article>
+        <article><h3>Partner</h3><p>Explore a school, community, or organizational partnership.</p><a class="text-link" href="mailto:goinetug@gmail.com?subject=Partnership%20with%20Orchid%20Initiative">Start a conversation <span aria-hidden="true">↗</span></a></article>
+      </div>
+    </section>
   </main>
 
-  <footer id="contact" class="site-footer">
-    <p>📧 Email: <a href="mailto:goinetug@gmail.com">goinetug@gmail.com</a></p>
-    <p>📍 Buyiye Village, Busikho Parish, Masinya Subcounty, Busia, Uganda</p>
-    <p>Connect with us:</p>
-    <div class="social-links">
-      <a href="https://www.facebook.com/share/p/1FnyU5En1f/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
-      <a href="https://twitter.com/goinetug" target="_blank" aria-label="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
-      <a href="https://instagram.com/goinetug" target="_blank" aria-label="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div><p class="footer-brand">Orchid Initiative</p><p>Growing opportunity with communities in Busia, Uganda.</p></div>
+      <div><h2>Explore</h2><a href="projects.html">Projects</a><a href="#future-plans">Future plans</a><a href="#tap-to-grow">Tap to grow</a><a href="gallery.html">Gallery</a><a href="about.html">About us</a><a href="donate.html">Support us</a><h2 class="related-title">Related organization</h2><a href="https://www.reachone-touchone.org/ug/programmes" target="_blank" rel="noopener noreferrer">Reach One Touch One Ministries (ROTOM)</a></div>
+      <div><h2>Contact</h2><a href="mailto:goinetug@gmail.com">goinetug@gmail.com</a><a href="https://wa.me/256780240187" target="_blank" rel="noopener noreferrer">WhatsApp: 0780240187</a><p>Buyiye Village, Busikho Parish, Masinya Subcounty, Busia, Uganda</p><div class="footer-social"><a href="https://www.facebook.com/share/p/1FnyU5En1f/" target="_blank" rel="noopener noreferrer">Facebook</a><a href="https://instagram.com/goinetug" target="_blank" rel="noopener noreferrer">Instagram</a></div></div>
     </div>
-    <p>© <span id="year"></span> Orchid Initiative. All rights reserved.</p>
+    <div class="shell footer-bottom">© <span id="year"></span> Orchid Initiative</div>
   </footer>
-
-  <a href="https://wa.me/+256788258931" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-
-  <script src="components.js"></script>
   <script src="scripts.js"></script>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script src="tree-game.js"></script>
 </body>
 </html>

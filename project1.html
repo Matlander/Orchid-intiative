@@ -1,64 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Orchard Farms Project | Orchid Initiative</title>
-  <meta name="description" content="The Orchard Farms Project by Orchid Initiative establishes sustainable orchards in public institutions to promote nutrition, food security, and environmental awareness." />
-
-
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn about Orchid Initiative's fruit tree planting work with schools and other public institutions in Busia, Uganda.">
+  <title>Orchards in public institutions | Orchid Initiative</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  
-  <div id="back-container"></div>
-  <header class="hero-banner">
-    <div class="overlay"></div>
-    <h1>🌱 Orchard Farms in Public Institutions</h1>
-    <p>Planting the seeds of sustainability across schools and communities.</p>
-  </header>
-
-  <main>
-    <section>
-      <p>
-        The <strong>Orchard Farms Project</strong> is a core initiative of the Orchid Initiative designed to establish 
-        orchards in schools, hospitals, and local government compounds across Busia District. 
-        Through this, we aim to promote <strong>food security, nutrition, and environmental awareness</strong>.
-      </p>
-
-      <p>
-        Working hand-in-hand with Busia District authorities, this project trains youth and women in sustainable 
-        agriculture, orchard management, and fruit tree propagation.
-      </p>
-
-      <a href="donate.html">
-        <button>🌿 Donate to This Project</button>
-      </a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header"><div class="shell nav-row">
+    <a class="brand" href="index.html" aria-label="Orchid Initiative home">Orchid <span>Initiative</span></a>
+    <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">Menu</button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="index.html#impact">Our work</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="about.html">About</a><a class="nav-support" href="donate.html">Support us</a>
+    </nav>
+  </div></header>
+  <main id="main-content">
+    <header class="hero-banner"><p class="eyebrow">Schools & public spaces</p><h1>Orchards in public institutions</h1><p>Working with schools and other public institutions to make fruit trees part of everyday learning and community life.</p></header>
+    <section class="content-panel" aria-label="Project overview">
+      <p>This project supports the planting and care of fruit trees in public spaces across Busia District. Orchards can create practical opportunities to learn about nutrition, food growing, and environmental care.</p>
+      <p>Orchid Initiative works with local partners to share orchard management and tree care skills with the people who will look after each site.</p>
+      <a class="button button-primary" href="donate.html">Support this work</a>
     </section>
-
-    <section id="gallery">
-      <h2>Project Gallery</h2>
+    <section class="content-panel" aria-labelledby="gallery-title">
+      <h2 id="gallery-title">Project photos</h2>
       <div class="gallery-container">
-        <img src="images/img11.jpg" alt="Students planting fruit trees at a local school" loading="lazy">
-        <img src="images/img14.jpg" alt="Community environmental workshop" loading="lazy">
-        <img src="images/img4.jpg" alt="Community orchard gathering and awareness event" loading="lazy">
+        <img src="images/img5.jpg" alt="Adults and students holding young fruit trees outside a school" loading="lazy">
+        <img src="images/img1.jpg" alt="Students standing with a young tree in a field" loading="lazy">
+        <img src="images/img10.jpg" alt="Two adults holding young tree seedlings outside a building" loading="lazy">
       </div>
     </section>
   </main>
-  <script src="components.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      
-      document.getElementById("back-container").appendChild(
-        createBackButton("← Back to Projects", "projects.html")
-      );
-
-    
-      insertFooter();
-    });
-  </script>
+  <script src="components.js"></script><script src="scripts.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", insertFooter);</script>
 </body>
 </html>
