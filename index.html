@@ -35,10 +35,42 @@
           <a class="text-link" href="#impact">Explore our work <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-      <figure class="hero-photo">
-        <img src="images/img5.jpg" alt="Students and adults holding young fruit trees at a school in Busia District" fetchpriority="high">
-        <figcaption>Growing with school communities in Busia District</figcaption>
-      </figure>
+      <div class="hero-carousel" id="hero-carousel" role="region" aria-roledescription="carousel" aria-label="Orchid Initiative in pictures">
+        <div class="hero-carousel-track" aria-live="off">
+          <figure class="hero-slide is-active">
+            <img src="images/orchid-orchard-care.jpg" alt="A woman standing among fruit trees and holding a leafy branch" width="1600" height="900" fetchpriority="high">
+            <figcaption>Caring for fruit trees together in an Orchid Initiative orchard.</figcaption>
+          </figure>
+          <figure class="hero-slide" aria-hidden="true">
+            <img src="images/orchid-fruit-harvest.jpg" alt="A woman holding harvested fruit beneath a fruit tree" width="1600" height="1066">
+            <figcaption>A fruit harvest from an Orchid Initiative orchard.</figcaption>
+          </figure>
+          <figure class="hero-slide" aria-hidden="true">
+            <img src="images/img5.jpg" alt="Students and adults holding young fruit trees beside a school sign in Busia District" width="1026" height="1026">
+            <figcaption>Growing with school communities in Busia District.</figcaption>
+          </figure>
+          <figure class="hero-slide" aria-hidden="true">
+            <img src="images/img8.jpg" alt="A man places a young plant into soil beside other seedlings" width="960" height="576">
+            <figcaption>Preparing young plants for planting.</figcaption>
+          </figure>
+          <figure class="hero-slide" aria-hidden="true">
+            <img src="images/img6.jpg" alt="Community members gather with young trees outside a health centre" width="960" height="540">
+            <figcaption>Sharing young trees with a health centre community.</figcaption>
+          </figure>
+          <figure class="hero-slide" aria-hidden="true">
+            <img src="images/img14.jpg" alt="A community member stands by a fruit tree holding two fruits" width="1080" height="648">
+            <figcaption>Fruit trees growing in a community setting.</figcaption>
+          </figure>
+        </div>
+        <div class="hero-carousel-controls">
+          <span class="hero-carousel-count" id="hero-carousel-count">01 / 06</span>
+          <div class="hero-carousel-actions">
+            <button class="hero-carousel-arrow" type="button" data-carousel-prev aria-label="Previous photo"><span aria-hidden="true">←</span></button>
+            <button class="hero-carousel-arrow" type="button" data-carousel-next aria-label="Next photo"><span aria-hidden="true">→</span></button>
+            <button class="hero-carousel-playback" type="button" data-carousel-toggle aria-label="Pause automatic gallery">Pause</button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="intro-band" id="impact" aria-labelledby="impact-title">
@@ -244,6 +276,7 @@
     <div class="shell footer-bottom">© <span id="year"></span> Orchid Initiative</div>
   </footer>
   <script src="scripts.js"></script>
+  <script src="hero-carousel.js"></script>
   <script src="tree-game.js"></script>
 </body>
 </html>
